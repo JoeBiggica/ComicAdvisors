@@ -10,6 +10,9 @@ Template.userList.helpers({
 	},
 	email: function() {
 		return Meteor.users.findOne(this._id).emails[0].address;
+	},
+	username: function() {
+		return Meteor.users.findOne(this._id).username;
 	}
 });
 
