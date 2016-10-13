@@ -15,10 +15,18 @@ Template.userList.helpers({
 
 Template.userPage.helpers({
 	firstName: function() {
-		var firstName = window.location.pathname.split('/users/')[1].split('/')[0];
+		var firstName = Meteor.users.findOne(this.userObject._id).profile.firstname;
 		return firstName;
 	},
+	lastName: function() {
+		var lastName = Meteor.users.findOne(this.userObject._id).profile.lastname;
+		return lastName;
+	},
 	email: function() {
-		return Meteor.user().emails[0].address;
+		var email = Meteor.users.findOne(this.userObject._id).emails[0].address;
+		return email;
+	},
+	userObject: function() {
+		console.log(Meteor.users.findOne(this.userObject._id))
 	}
 });
