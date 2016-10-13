@@ -1,0 +1,23 @@
+<template name="login">
+	<form>
+		<input type="email" name="loginEmail" placeholder="Email">
+		<input type="password" name="loginPassword" placeholder="Password">
+		<input type="submit" value="Login">
+	</form>
+</template>
+
+<template name="register">
+	<form>
+		<input type="email" name="registerEmail" placeholder="Email">
+		<input type="text" name="username" placeholder="Username">
+		<input type="text" name="firstName" placeholder="First Name">
+		<input type="text" name="lastName" placeholder="Last Name">
+		<input type="password" name="registerPassword" placeholder="Password">
+		<input type="submit" value="Register">
+	</form>
+</template>
+
+<template name="logout">
+	<span>Hi {{firstName}}</span>
+	<a href="#" class="logout">Logout</a>
+</template>

@@ -1,0 +1,16 @@
+<template name="userList">
+  {{#each users}}
+  	<hr>
+  	<div>
+  		User:
+  		<div>
+	  		Name: {{firstName}}
+	  	</div>
+	  	<div>
+	  		Email: {{email}}
+	  	</div>
+	  	<a href="/users/{{firstName}}" class="edit-user">Edit User</a>
+  	</div>
+  	<hr>
+  {{/each}}
+</template>
