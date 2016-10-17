@@ -1,5 +1,9 @@
 <template name="mainLayout">
-  {{> publicNav}}
+  {{#if admin}}
+    {{> adminNav}}
+  {{else}}
+    {{> publicNav}}
+  {{/if}}
   <div class="container">
     {{> yield region='nav'}}
   </div>

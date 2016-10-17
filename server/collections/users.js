@@ -18,6 +18,7 @@ Meteor.publish("userProfile", function(username) {
 	}
 });
 
+
 Meteor.methods({
 	checkUserExists: function(username) {
 		var userFind = Meteor.users.findOne({username:username});
