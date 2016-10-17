@@ -1,0 +1,14 @@
+<template name="adminControls">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Admin Controls <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        {{#linkTo route='newPost'}}
+          Add new post
+        {{/linkTo}}
+      </li>
+    </ul>
+  </div>
+</template>

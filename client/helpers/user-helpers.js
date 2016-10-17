@@ -1,6 +1,9 @@
 Template.logout.helpers({
 	firstName: function() {
 		return Meteor.user().profile.firstname;
+	},
+	username: function() {
+		return Meteor.user().username;
 	}
 })
 
