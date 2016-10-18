@@ -33,6 +33,8 @@ Template.userPage.helpers({
 		return email;
 	},
 	userObject: function() {
-		console.log(Meteor.users.findOne(this.userObject._id))
+		var user = Meteor.users.findOne(this.userObject._id);
+		var userArticles = Articles.find({userId: user._id});
+		console.log(userArticles.collections)
 	}
 });

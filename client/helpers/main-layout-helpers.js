@@ -4,7 +4,7 @@ Template.mainLayout.helpers({
 	},
 	admin: function() {
 		if (Meteor.user()) {
-			if (Meteor.user().username == "joebiggs") {
+			if (Meteor.user().username == "joebiggs" || Meteor.user().username == "richrich") {
 				return true;
 			}
 		}

@@ -1,9 +1,9 @@
-Meteor.publish('allPosts', function() {
-	return Posts.find();
+Meteor.publish('allArticles', function() {
+	return Articles.find();
 });
 
-Meteor.publish('singlePost', function(id) {
-	return Posts.find(id);
+Meteor.publish('singleArticle', function(id) {
+	return Articles.find(id);
 });
 
 Meteor.publish('userList', function() {
