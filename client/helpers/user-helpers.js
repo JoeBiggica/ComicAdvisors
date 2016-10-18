@@ -34,7 +34,9 @@ Template.userPage.helpers({
 	},
 	userObject: function() {
 		var user = Meteor.users.findOne(this.userObject._id);
-		var userArticles = Articles.find({userId: user._id});
-		console.log(userArticles.collections)
+	},
+	userArticles: function() {
+		var articles = this.userArticles;
+		return articles;
 	}
 });

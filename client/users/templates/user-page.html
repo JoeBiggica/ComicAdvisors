@@ -11,5 +11,13 @@
 	<div>
 {{userObject}}
 	</div>
+	<div class="articles">
+		ARTICLES
+		{{#each userArticles}}
+			<hr>
+				{{> articleItem}}
+			<hr>
+		{{/each}}
+	</div>
 </div>
 </template>

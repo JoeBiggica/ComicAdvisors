@@ -18,6 +18,15 @@ Meteor.publish("userProfile", function(username) {
 	}
 });
 
+Meteor.publish('userList', function() {
+	return Meteor.users.find();
+});
+
+// Meteor.publish('userArticlesList', function(username) {
+// 	var user = Meteor.users.findOne({username:username});
+// 	var userArticles = Articles.find({userId: user._id}).fetch();
+// 	return userArticles;
+// });
 
 Meteor.methods({
 	checkUserExists: function(username) {
@@ -27,5 +36,10 @@ Meteor.methods({
 		 } else {
 		 	console.log('User Already Exists');
 		 }
+	},
+	getUserId: function(username) {
+		var user = Meteor.users.findOne({username:username});
+		var userId = user._id;
+		return userId;
 	}
 });

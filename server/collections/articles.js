@@ -5,7 +5,3 @@ Meteor.publish('allArticles', function() {
 Meteor.publish('singleArticle', function(id) {
 	return Articles.find(id);
 });
-
-Meteor.publish('userList', function() {
-	return Meteor.users.find();
-});
