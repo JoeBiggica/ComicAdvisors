@@ -22,13 +22,23 @@ Meteor.publish('userList', function() {
 	return Meteor.users.find();
 });
 
-// Meteor.publish('userArticlesList', function(username) {
-// 	var user = Meteor.users.findOne({username:username});
-// 	var userArticles = Articles.find({userId: user._id}).fetch();
-// 	return userArticles;
-// });
+Meteor.publish('userArticlesList', function(username) {
+	var user = Meteor.users.findOne({username:username});
+	return Articles.find({userId: user._id});
+});
 
 Meteor.methods({
+	isAdmin: function() {
+		if (Meteor.user()) {
+			if (Meteor.user().username == "joebiggs" || Meteor.user().username == "richrich") {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	},
 	checkUserExists: function(username) {
 		var userFind = Meteor.users.findOne({username:username});
 		 if (userFind) {
