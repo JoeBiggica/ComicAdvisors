@@ -6,6 +6,7 @@ AutoForm.hooks({
 	},
 	updateArticleForm: {
 		onSuccess: function(operation, article) {
+			AutoForm.resetForm(this.formId)
 			Router.go('singleArticle', article);
 		}
 	}
