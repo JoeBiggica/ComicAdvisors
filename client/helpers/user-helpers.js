@@ -36,3 +36,9 @@ Template.userPage.helpers({
 		var user = Meteor.users.findOne(this.userObject._id);
 	}
 });
+
+Template.userArticleItem.helpers({
+	username: function() {
+		return Session.get("queryUsername");
+	}
+})

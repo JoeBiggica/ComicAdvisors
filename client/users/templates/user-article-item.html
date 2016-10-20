@@ -1,0 +1,14 @@
+<template name="userArticleItem">
+	<div class="row">
+		<div class="col-lg-8">
+			<h3>
+				{{#linkTo route='singleArticle'}}
+					{{title}}
+				{{/linkTo}}
+			</h3>
+		</div>
+		<div class="col-lg-4">
+			<a href="/admin/users/{{username}}/article/id{{_id}}">Edit Article</a>
+		</div>
+	</div>
+</template>
