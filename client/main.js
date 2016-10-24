@@ -57,9 +57,10 @@ if (Meteor.isClient) {
 			selector: 'textarea',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/article-editor.css',
-			plugins: "link image media",
-			menubar: "file edit view format insert",
-			toolbar: "undo redo | styleselect | bold italic | link image media | alignleft aligncenter alignright | bullist numlist",
+			body_id: 'caArticleEditor',
+			plugins: 'link image media',
+			menubar: 'file edit view format insert',
+			toolbar: 'undo redo | styleselect | bold italic | link image media | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
 			image_description: false,
 			image_caption: true
