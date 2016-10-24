@@ -5,8 +5,8 @@ AutoForm.hooks({
 		}
 	},
 	updateArticleForm: {
-		onSuccess: function(operation, article) {
-			AutoForm.resetForm(this.formId)
+		onSuccess: function(operation) {
+			var article = Articles.findOne(this.docId);
 			Router.go('singleArticle', article);
 		}
 	}
