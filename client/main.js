@@ -52,7 +52,7 @@ if (Meteor.isClient) {
 		}
 	});
 
-	Template.articleUpdate.rendered = function() {
+	function tinymceInit() {
 		tinymce.init({
 			selector: 'textarea',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
@@ -65,5 +65,13 @@ if (Meteor.isClient) {
 			image_description: false,
 			image_caption: true
 		});
+	}
+
+	Template.newArticle.rendered = function() {
+		tinymceInit();
+	}
+
+	Template.articleUpdate.rendered = function() {
+		tinymceInit();
 	}
 }
