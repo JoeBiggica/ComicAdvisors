@@ -92,6 +92,7 @@ srp@1.0.9
 standard-minifier-css@1.2.0_1
 standard-minifier-js@1.2.0_1
 stylus@2.513.5_1
+teamon:tinymce@4.3.13
 templating@1.2.15
 templating-compiler@1.2.15
 templating-runtime@1.2.15
