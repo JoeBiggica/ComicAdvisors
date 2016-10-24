@@ -1,4 +1,8 @@
 if (Meteor.isClient) {
+	Meteor.startup(function() {
+		$('body').addClass('comicadvisors');
+	});
+
 	Template.register.events({
 		'submit form': function(event) {
 			event.preventDefault();
