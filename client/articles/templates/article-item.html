@@ -1,7 +1,14 @@
 <template name="articleItem">
-	<h3>
+	<article class="article">
 		{{#linkTo route='singleArticle'}}
-			{{title}}
+			<div class="article-photo">
+				{{{primaryAsset}}}
+			</div>
 		{{/linkTo}}
-	</h3>
+		{{#linkTo route='singleArticle'}}
+		<div class="article-title">
+			<h3>{{title}}</h3>
+		</div>
+		{{/linkTo}}
+	</article>
 </template>

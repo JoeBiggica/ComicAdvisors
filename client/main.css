@@ -14,6 +14,7 @@ body.comicadvisors {
 }
 .comicadvisors a {
     background-color:transparent;
+    text-decoration: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
@@ -35,7 +36,7 @@ h6 { font-size: 1.2em; }
 
 p {
     font-size: 1.4em;
-    line-height: 1.2em;
+    line-height: 24px;
 }
 
 /* Nav */
@@ -44,7 +45,7 @@ p {
 	border-radius: 0;
 	height: 54px;
 }
-.comicadvisors .navbar-logo {
+nav .navbar-logo {
 	width: 300px;
 	position: absolute;
 	left: 50%;
@@ -53,11 +54,47 @@ p {
 	font-size: 24px;
 	padding-top: 12px;
 }
-.comicadvisors .navbar-logo a {
+nav .navbar-logo a {
 	color: #fff;
 }
+nav .navbar-nav {
+	font-size: 1.4em;
+} 
 
 /* Main Content */
 #mainContent {
 	margin-top: 78px;
 }
+#mainContent a {
+	color: #111;
+}
+#mainContent article {
+	margin: 0 0 40px;
+}
+article .article-photo {
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+article img,
+article iframe {
+	width: 100%;
+}
+article iframe {
+	height: 400px;
+}
+article .article-title h3 {
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+

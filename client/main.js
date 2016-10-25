@@ -59,13 +59,42 @@ if (Meteor.isClient) {
 	Template.userArticleItem.events({
 		'click .article-delete': function(event) {
 			event.preventDefault();
-			console.log(this._id)
+			var userId = Meteor.user()._id;
+			var articleUserId = this.userId;
+			var articleId = this._id;
+			if (articleUserId === userId) {
+				swal({   
+					title: "ARE YOU SURE ABOUT THAT?",   
+					text: "This article will be removed completely",
+					imageUrl: "https://media.tenor.co/images/cb89abffb06b3fabb69dfab551e3a0ac/raw", 
+					showCancelButton: true,   
+					confirmButtonColor: "#DD6B55",   
+					confirmButtonText: "Yes",
+					cancelButtonText: "Cancel",   
+					closeOnConfirm: false,   
+					closeOnCancel: true 
+				}, 
+				function(isConfirm) {   
+					if (isConfirm) {     
+						swal("Deleted!", "Your article has been deleted.", "success"); 
+						Articles.remove(articleId);  
+					}
+				});
+			} else {
+				swal({
+					title: "Access Denied",
+					text: "You cannot delete an article you do not own.",
+					type: "error",
+					confirmButtonColor: "#DD6B55",
+					confirmButtonText: "Close"
+				})
+			}
 		}
 	})
 
 	function tinymceInit() {
 		tinymce.init({
-			selector: 'textarea',
+			selector: 'textarea.body',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/article-editor.css',
 			body_id: 'caArticleEditor',
@@ -73,6 +102,17 @@ if (Meteor.isClient) {
 			menubar: 'file edit view format insert',
 			toolbar: 'undo redo | styleselect | bold italic | link image media | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
+			image_description: false,
+			image_caption: true
+		});
+		tinymce.init({
+			selector: 'textarea.primary-asset',
+			skin_url: '/packages/teamon_tinymce/skins/lightgray',
+			content_css : '/article-editor.css',
+			plugins: 'image media',
+			menubar: '',
+			toolbar: 'image media',
+			image_dimensions: true,
 			image_description: false,
 			image_caption: true
 		});
