@@ -44,7 +44,7 @@ p {
 	border-radius: 0;
 	height: 54px;
 }
-.comicadvisors .navbar-header {
+.comicadvisors .navbar-logo {
 	width: 300px;
 	position: absolute;
 	left: 50%;
@@ -53,6 +53,11 @@ p {
 	font-size: 24px;
 	padding-top: 12px;
 }
-.comicadvisors .navbar-header a {
+.comicadvisors .navbar-logo a {
 	color: #fff;
+}
+
+/* Main Content */
+#mainContent {
+	margin-top: 78px;
 }

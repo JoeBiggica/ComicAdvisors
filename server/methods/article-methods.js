@@ -1,11 +1,3 @@
-Meteor.publish('allArticles', function() {
-	return Articles.find();
-});
-
-Meteor.publish('singleArticle', function(id) {
-	return Articles.find(id);
-});
-
 Meteor.methods({
   submitArticle: function(article) {
   	var user = Meteor.user();

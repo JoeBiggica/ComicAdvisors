@@ -56,6 +56,13 @@ if (Meteor.isClient) {
 		}
 	});
 
+	Template.userArticleItem.events({
+		'click .article-delete': function(event) {
+			event.preventDefault();
+			console.log(this._id)
+		}
+	})
+
 	function tinymceInit() {
 		tinymce.init({
 			selector: 'textarea',
