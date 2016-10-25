@@ -66,7 +66,7 @@ if (Meteor.isClient) {
 				swal({   
 					title: "ARE YOU SURE ABOUT THAT?",   
 					text: "This article will be removed completely",
-					imageUrl: "https://media.tenor.co/images/cb89abffb06b3fabb69dfab551e3a0ac/raw", 
+					imageUrl: "http://i.imgur.com/auM1Xmb.gif", 
 					showCancelButton: true,   
 					confirmButtonColor: "#DD6B55",   
 					confirmButtonText: "Yes",
