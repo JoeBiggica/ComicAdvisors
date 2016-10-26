@@ -65,22 +65,35 @@ nav .navbar-nav {
 }
 .nav-social li {
 	display: inline-block;
+	margin-left: 14px;
 }
 .nav-social i {
-	width: 25px;
-	height: 25px;
+	height: 26px;
 	display: inline-block;
 	background: url(resources/images/core-share-white-color-no-circle-2x.png) no-repeat center;
-	background-size: 150px;
+	background-size: 148px;
+	cursor: pointer;
 }
 .nav-social .ca-twitter {
-	background-position: -10px 1px;
+	width: 35px;
+    background-position: -29px -31px;
 }
 .nav-social .ca-facebook {
-	background-position: -10px 1px;
+	width: 14px;
+	background-position: -9px -31px;
 }
 .nav-social .ca-instagram {
-	background-position: -10px 1px;
+	width: 27px;
+	background-position: -70px -31px;
+}
+.nav-social .ca-twitter:hover {
+    background-position: -29px 0px;
+}
+.nav-social .ca-facebook:hover {
+    background-position: -9px 0px;
+}
+.nav-social .ca-instagram:hover {
+    background-position: -70px 0px;
 }
 
 /* Main Content */
