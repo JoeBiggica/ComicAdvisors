@@ -59,7 +59,28 @@ nav .navbar-logo a {
 }
 nav .navbar-nav {
 	font-size: 1.4em;
+}
+.comicadvisors .navbar-nav > li > a,
+.comicadvisors .navbar-default .navbar-nav > .open > a,
+.comicadvisors nav .dropdown-menu > li > a {
+	color: #fff;
 } 
+.comicadvisors .navbar-nav > li > a:hover,
+.comicadvisors .navbar-nav > li > a:hover {
+	color: red;
+} 
+.comicadvisors .navbar-default .navbar-nav > .open > a {
+	background: #666;
+}
+.comicadvisors nav .dropdown-menu {
+	border: none;
+	background: #666;
+}
+.comicadvisors .dropdown-menu > li > a:hover, 
+.comicadvisors .dropdown-menu > li > a:focus {
+	color: red;
+	background: none;
+}
 .nav-social {
 	padding: 12px 0;
 }
