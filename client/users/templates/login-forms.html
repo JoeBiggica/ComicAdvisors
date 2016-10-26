@@ -1,4 +1,6 @@
 <template name="login">
+	<h4>Login</h4>
+	<hr>
 	<form class="form" id="login-nav">
 		<div class="form-group">
 			<input type="email" class="form-control" name="loginEmail" placeholder="Email" required>
@@ -14,13 +16,27 @@
 </template>
 
 <template name="register">
+	<h4>Register</h4>
+	<hr>
 	<form>
-		<input type="email" name="registerEmail" placeholder="Email">
-		<input type="text" name="username" placeholder="Username">
-		<input type="text" name="firstName" placeholder="First Name">
-		<input type="text" name="lastName" placeholder="Last Name">
-		<input type="password" name="registerPassword" placeholder="Password">
-		<input type="submit" value="Register">
+		<div class="form-group">
+			<input type="email" class="form-control" name="registerEmail" placeholder="Email">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="username" placeholder="Username">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="firstName" placeholder="First Name">
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="lastName" placeholder="Last Name">
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control" name="registerPassword" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary btn-block" value="Register">
+		</div>
 	</form>
 </template>
 
