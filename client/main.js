@@ -123,7 +123,7 @@ if (Meteor.isClient) {
 		tinymce.init({
 			selector: 'textarea.body',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
-			content_css : '/article-editor.css',
+			content_css : '/resources/css/article-editor.css',
 			body_id: 'caArticleEditor',
 			plugins: 'link image media',
 			menubar: 'file edit view format insert',

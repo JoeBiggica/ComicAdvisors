@@ -60,6 +60,28 @@ nav .navbar-logo a {
 nav .navbar-nav {
 	font-size: 1.4em;
 } 
+.nav-social {
+	padding: 12px 0;
+}
+.nav-social li {
+	display: inline-block;
+}
+.nav-social i {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: url(resources/images/core-share-white-color-no-circle-2x.png) no-repeat center;
+	background-size: 150px;
+}
+.nav-social .ca-twitter {
+	background-position: -10px 1px;
+}
+.nav-social .ca-facebook {
+	background-position: -10px 1px;
+}
+.nav-social .ca-instagram {
+	background-position: -10px 1px;
+}
 
 /* Main Content */
 #mainContent {
