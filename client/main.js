@@ -25,6 +25,7 @@ if (Meteor.isClient) {
 							lastname: lastName
 						}
 					});
+					Router.go('root');
 				}
 			});
 		}
@@ -36,7 +37,19 @@ if (Meteor.isClient) {
 			var email = event.target.loginEmail.value;
 			var password = event.target.loginPassword.value;
 			console.log("Form submitted");
-			Meteor.loginWithPassword(email, password);
+			Meteor.loginWithPassword(email, password, function(error) {
+				if (error) {
+					swal({
+						title: "Not Even Good",
+						text: "You forgot your username or password dummy.",
+						type: "error",
+						confirmButtonColor: "#DD6B55",
+						confirmButtonText: "Try Again"
+					});
+				} else {
+					Router.go('root');
+				}
+			});
 		}
 	});
 
