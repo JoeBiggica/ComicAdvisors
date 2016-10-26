@@ -1,0 +1,14 @@
+<template name="homepage">
+	<div class="container">
+		<div class="row">
+		  	<div class="col-lg-7">
+			  	{{#each articles}}
+			  		{{> articleItem}}
+			  	{{/each}}
+		  	</div>
+		  	<div class="col-lg-3">
+		    	{{> twitterFeed}}
+		  	</div>
+	  	</div>
+  	</div>
+</template>

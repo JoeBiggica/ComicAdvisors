@@ -87,10 +87,24 @@ if (Meteor.isClient) {
 					type: "error",
 					confirmButtonColor: "#DD6B55",
 					confirmButtonText: "Close"
-				})
+				});
 			}
 		}
-	})
+	});
+
+	// Template.articleUpdate.events({
+	// 	'click #updateArticleForm button[type=submit]': function(event) {
+	// 		event.preventDefault();
+	// 		var userId = Meteor.user()._id;
+	// 		var articleUserId = this.userId;
+	// 		var articleId = this._id;
+	// 		console.log(userId)
+	// 		console.log(articleUserId)
+	// 		console.log(articleId)
+	// 	}
+	// });
+
+
 
 	function tinymceInit() {
 		tinymce.init({
