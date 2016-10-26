@@ -94,6 +94,10 @@ nav .navbar-nav {
 .nav-social .ca-instagram:hover {
     background-position: -70px 0px;
 }
+.comicadvisors .navbar-collapse {
+	border: none;
+	background: #080808;
+}
 
 /* Main Content */
 #mainContent {

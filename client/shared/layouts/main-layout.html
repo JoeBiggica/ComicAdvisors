@@ -16,13 +16,13 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
+          {{> navSocial}}
           {{#if admin}} 
             {{> adminControls}}
           {{/if}}
           {{#if currentUser}}
             {{> logout}}
           {{/if}}
-          {{> navSocial}}
         </ul>
       </div>
     </div>
