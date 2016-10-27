@@ -193,7 +193,7 @@ article .article-author {
 }
 
 /* Editor Tools */
-.comicadvisors form {
+body.admin {
 	font-family: helvetica,arial,sans-serif;
 }
 .comicadvisors .form-group label {
