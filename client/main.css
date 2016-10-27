@@ -196,6 +196,9 @@ article .article-author {
 body.admin {
 	font-family: helvetica,arial,sans-serif;
 }
+.admin .editor-tool-title {
+	margin-bottom: 20px;
+}
 .comicadvisors .form-group label {
 	font-size: 1.8em;
 }
