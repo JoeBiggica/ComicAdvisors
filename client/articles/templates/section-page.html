@@ -1,0 +1,15 @@
+<template name="sectionPage">
+	<div class="container">
+		<div class="row">
+		  	<div class="col-lg-7">
+		  		<h2>{{section}}</h2>
+			  	{{#each articles}}
+			  		{{> articleItemFeature}}
+			  	{{/each}}
+		  	</div>
+		  	<div class="col-lg-3">
+		    	{{> twitterFeed}}
+		  	</div>
+	  	</div>
+  	</div>
+</template>
