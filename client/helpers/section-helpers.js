@@ -1,4 +1,4 @@
-Template.sectionPage.helpers({
+Template.sectionArticlesPage.helpers({
 	section: function() {
 		return Session.get("querySection");
 	}

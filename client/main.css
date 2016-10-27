@@ -1,13 +1,13 @@
 /* Comic Advisors Global Stylesheet */
 
 html {
-    font-family:helvetica,arial,sans-serif;
+    font-family:avenir,helvetica,arial,sans-serif;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
 body.comicadvisors {
 	margin:0;
-	font-family: helvetica,arial,sans-serif;
+	font-family:avenir,helvetica,arial,sans-serif;
 	font-weight:400;
     font-size:10px;
     line-height:1.125;
@@ -15,6 +15,7 @@ body.comicadvisors {
 .comicadvisors a {
     background-color:transparent;
     text-decoration: none;
+    color: #111;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
@@ -45,6 +46,8 @@ p {
 	border-radius: 0;
 }
 nav .navbar-logo {
+	font-weight: bold;
+	text-transform: uppercase;
 	width: 300px;
 	position: absolute;
 	left: 50%;
@@ -55,6 +58,25 @@ nav .navbar-logo {
 }
 nav .navbar-logo a {
 	color: #fff;
+	display: inline-block;
+    position: relative;
+    width: 100%;
+}
+nav .navbar-logo .logo-left {
+	position: absolute;
+    left: 38px;
+}
+nav .navbar-logo .logo-right {
+	position: absolute;
+    right: 12px;
+}
+nav .logo {
+	width: 34px;
+    height: 33px;
+    margin-top: -3px;
+    display: inline-block;
+    background: url(resources/images/Social_Icon-circle-black.png) no-repeat center;
+    background-size: 33px;
 }
 nav .navbar-nav {
 	font-size: 1.4em;
@@ -62,22 +84,22 @@ nav .navbar-nav {
 .comicadvisors .navbar-nav > li > a,
 .comicadvisors .navbar-default .navbar-nav > .open > a,
 .comicadvisors nav .dropdown-menu > li > a {
-	color: #fff;
+	color: #fff !important;
 } 
 .comicadvisors .navbar-nav > li > a:hover,
 .comicadvisors .navbar-nav > li > a:hover {
-	color: #EB2828;
+	color: #EB2828 !important;
 } 
 .comicadvisors .navbar-default .navbar-nav > .open > a {
-	background: #666;
+	background: #333;
 }
 .comicadvisors nav .dropdown-menu {
 	border: none;
-	background: #666;
+	background: #333 !important;
 }
 .comicadvisors .dropdown-menu > li > a:hover, 
 .comicadvisors .dropdown-menu > li > a:focus {
-	color: #EB2828;
+	color: #EB2828 !important;
 	background: none;
 }
 .nav-social {
@@ -118,13 +140,14 @@ nav .navbar-nav {
 	border: none;
 	background: #080808;
 }
+.comicadvisors .navbar-fixed-top .navbar-collapse, 
+.comicadvisors .navbar-fixed-bottom .navbar-collapse {
+	max-height: none;
+}
 
 /* Main Content */
 #mainContent {
 	margin-top: 78px;
-}
-#mainContent a {
-	color: #111;
 }
 #mainContent .module-title {
 	border-bottom: 3px solid #EB2828;
@@ -157,8 +180,10 @@ article .article-section {
 	font-size: 1.4em;
     font-weight: bold;
 	text-transform: uppercase;
-	color: #EB2828;
 	margin-bottom: 6px;
+}
+article .article-section a {
+	color: #EB2828;
 }
 article .article-author {
 	font-size: 1.2em;
@@ -167,7 +192,13 @@ article .article-author {
 	font-weight: bold;
 }
 
-
+/* Editor Tools */
+.comicadvisors form {
+	font-family: helvetica,arial,sans-serif;
+}
+.comicadvisors .form-group label {
+	font-size: 1.8em;
+}
 
 
 
