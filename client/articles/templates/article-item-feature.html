@@ -1,0 +1,16 @@
+<template name="articleItemFeature">
+	<article class="article">
+		{{#linkTo route='singleArticle'}}
+			<div class="article-photo">
+				{{{primaryAsset}}}
+			</div>
+		{{/linkTo}}
+		<div class="article-section">{{section}}</div>
+		{{#linkTo route='singleArticle'}}
+			<div class="article-title">
+				<h3>{{title}}</h3>
+			</div>
+		{{/linkTo}}
+		<div class="article-author">By <span class="author-name">{{author}}</span></div>
+	</article>
+</template>

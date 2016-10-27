@@ -16,13 +16,20 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
         <ul class="nav navbar-nav navbar-right">
-          {{> navSocial}}
           {{#if admin}} 
             {{> adminControls}}
           {{/if}}
           {{#if currentUser}}
             {{> logout}}
           {{/if}}
+          {{> navSocial}}
+        </ul>
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="">Comics</a></li>
+          <li><a href="">Movies</a></li>
+          <li><a href="">TV</a></li>
+          <li><a href="">Games</a></li>
+          <li><a href="">Collectibles</a></li>
         </ul>
       </div>
     </div>
