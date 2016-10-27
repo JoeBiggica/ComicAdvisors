@@ -126,6 +126,11 @@ nav .navbar-nav {
 #mainContent a {
 	color: #111;
 }
+#mainContent .module-title {
+	border-bottom: 3px solid #EB2828;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
 #mainContent article {
 	margin: 0 0 40px;
     padding-bottom: 20px;
