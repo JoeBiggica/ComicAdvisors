@@ -1,15 +1,16 @@
 <template name="userPage">
-<div>
-	User:
 	<div>
-    Email: {{email}}
-    <br>
-		First Name: {{firstName}}
-    <br>
-    Last Name: {{lastName}}
-	</div>
-	<div>
-{{userObject}}
+		<ul class="list-group">
+	  		<li class="list-group-item user-name">
+		  		<h3>{{firstName}} {{lastName}}</h3>
+		  	</li>
+		  	<li class="list-group-item user-email">
+		  		<h4>Email: {{email}}</h4>
+		  	</li>
+	      	<li class="list-group-item user-username">
+	     		<h4>Username: {{username}}</h4>
+	     	</li>
+	    </ul>
 	</div>
 	<div class="articles">
 		ARTICLES
@@ -18,7 +19,5 @@
 		  	{{> userArticleItem}}
 		  	<hr>
 		  {{/each}}
-
 	</div>
-</div>
 </template>

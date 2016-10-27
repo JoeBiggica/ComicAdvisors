@@ -193,7 +193,7 @@ article .article-author {
 }
 
 /* Editor Tools */
-body.admin {
+body.admin #mainContent{
 	font-family: helvetica,arial,sans-serif;
 }
 .admin .editor-tool-title {

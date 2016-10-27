@@ -1,16 +1,20 @@
 <template name="userList">
   {{#each users}}
   	<hr>
-  	<div>
-  		User:
-  		<div>
-	  		Name: {{firstName}}
-	  	</div>
-	  	<div>
-	  		Email: {{email}}
-	  	</div>
-	  	<a href="/admin/batcave/users/{{username}}" class="user-page">User Page</a>
-  	</div>
+  	<ul class="list-group">
+      <li class="list-group-item user-name">
+        <h3>{{firstName}} {{lastName}}</h3>
+      </li>
+      <li class="list-group-item user-email">
+        <h4>Email: {{email}}</h4>
+      </li>
+        <li class="list-group-item user-username">
+        <h4>Username: {{username}}</h4>
+      </li>
+    </ul>
+  	<a href="/admin/batcave/users/{{username}}" class="user-profile">
+      <button class="btn btn-default">Profile</button>
+    </a>
   	<hr>
   {{/each}}
 </template>
