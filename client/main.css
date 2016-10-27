@@ -149,7 +149,9 @@ article .article-title h3 {
 	margin-bottom: 8px;
 }
 article .article-section {
-	font-size: 1.8em;
+	font-size: 1.4em;
+    font-weight: bold;
+	text-transform: uppercase;
 	color: #EB2828;
 	margin-bottom: 6px;
 }
