@@ -203,11 +203,11 @@ article .article-author{
 
 /* Article */
 .article-title{
-	font-weight: bold;
     margin-bottom: 10px;
 }
 .article-title h2{
 	font-size: 4em;
+	font-weight: bold;
 }
 .article-meta {
 	margin-bottom: 14px;
