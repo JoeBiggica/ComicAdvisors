@@ -1,18 +1,18 @@
 /* Comic Advisors Global Stylesheet */
 
-html {
+html{
     font-family:avenir,helvetica,arial,sans-serif;
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
 }
-body.comicadvisors {
+body.comicadvisors{
 	margin:0;
 	font-family:avenir,helvetica,arial,sans-serif;
 	font-weight:400;
     font-size:10px;
     line-height:1.125;
 }
-.comicadvisors a {
+.comicadvisors a{
     background-color:transparent;
     text-decoration: none;
     color: #111;
@@ -20,7 +20,7 @@ body.comicadvisors {
     -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
 .comicadvisors a:active,
-.comicadvisors a:hover {
+.comicadvisors a:hover{
     outline:0;
     text-decoration: none;
 }
@@ -35,17 +35,17 @@ h4 { font-size: 1.8em; }
 h5 { font-size: 1.4em; }
 h6 { font-size: 1.2em; }
 
-p {
+p{
     font-size: 1.4em;
     line-height: 24px;
 }
 
 /* Nav */
-.comicadvisors nav {
+.comicadvisors nav{
 	background: #080808;
 	border-radius: 0;
 }
-nav .navbar-logo {
+nav .navbar-logo{
 	font-weight: bold;
 	text-transform: uppercase;
 	width: 300px;
@@ -56,21 +56,21 @@ nav .navbar-logo {
 	font-size: 24px;
 	padding-top: 12px;
 }
-nav .navbar-logo a {
+nav .navbar-logo a{
 	color: #fff;
 	display: inline-block;
     position: relative;
     width: 100%;
 }
-nav .navbar-logo .logo-left {
+nav .navbar-logo .logo-left{
 	position: absolute;
-    left: 38px;
+    left: 51px;
 }
-nav .navbar-logo .logo-right {
+nav .navbar-logo .logo-right{
 	position: absolute;
     right: 12px;
 }
-nav .logo {
+nav .logo{
 	width: 34px;
     height: 33px;
     margin-top: -3px;
@@ -78,117 +78,117 @@ nav .logo {
     background: url(resources/images/Social_Icon-circle-black.png) no-repeat center;
     background-size: 33px;
 }
-nav .navbar-nav {
+nav .navbar-nav{
 	font-size: 1.4em;
 }
 .comicadvisors .navbar-nav > li > a,
 .comicadvisors .navbar-default .navbar-nav > .open > a,
-.comicadvisors nav .dropdown-menu > li > a {
+.comicadvisors nav .dropdown-menu > li > a{
 	color: #fff !important;
 } 
 .comicadvisors .navbar-nav > li > a:hover,
-.comicadvisors .navbar-nav > li > a:hover {
+.comicadvisors .navbar-nav > li > a:hover{
 	color: #EB2828 !important;
 } 
-.comicadvisors .navbar-default .navbar-nav > .open > a {
+.comicadvisors .navbar-default .navbar-nav > .open > a{
 	background: #333;
 }
-.comicadvisors nav .dropdown-menu {
+.comicadvisors nav .dropdown-menu{
 	border: none;
 	background: #333 !important;
 }
 .comicadvisors .dropdown-menu > li > a:hover, 
-.comicadvisors .dropdown-menu > li > a:focus {
+.comicadvisors .dropdown-menu > li > a:focus{
 	color: #EB2828 !important;
 	background: none;
 }
-.nav-social {
+.nav-social{
 	padding: 12px 0;
 }
-.nav-social li {
+.nav-social li{
 	display: inline-block;
 	margin-left: 14px;
 }
-.nav-social i {
+.nav-social i{
 	height: 26px;
 	display: inline-block;
 	background: url(resources/images/core-share-white-color-no-circle-2x.png) no-repeat center;
 	background-size: 148px;
 }
-.nav-social .ca-twitter {
+.nav-social .ca-twitter{
 	width: 35px;
     background-position: -29px -31px;
 }
-.nav-social .ca-facebook {
+.nav-social .ca-facebook{
 	width: 14px;
 	background-position: -9px -31px;
 }
-.nav-social .ca-instagram {
+.nav-social .ca-instagram{
 	width: 27px;
 	background-position: -70px -31px;
 }
-.nav-social .ca-twitter:hover {
+.nav-social .ca-twitter:hover{
     background-position: -29px 0px;
 }
-.nav-social .ca-facebook:hover {
+.nav-social .ca-facebook:hover{
     background-position: -9px 0px;
 }
-.nav-social .ca-instagram:hover {
+.nav-social .ca-instagram:hover{
     background-position: -70px 0px;
 }
-.comicadvisors .navbar-collapse {
+.comicadvisors .navbar-collapse{
 	border: none;
 	background: #080808;
 }
 .comicadvisors .navbar-fixed-top .navbar-collapse, 
-.comicadvisors .navbar-fixed-bottom .navbar-collapse {
+.comicadvisors .navbar-fixed-bottom .navbar-collapse{
 	max-height: none;
 }
 
 /* Main Content */
-#mainContent {
+#mainContent{
 	margin-top: 78px;
 }
-#mainContent .module-title {
+#mainContent .module-title{
 	border-bottom: 3px solid #EB2828;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-#mainContent article {
+#mainContent article{
 	margin: 0 0 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
-article .article-photo {
+article .article-photo{
 	height: 400px;
 	overflow: hidden;
 	margin-bottom: 10px;
 }
 article img,
-article iframe {
+article iframe{
 	width: 100%;
 }
-article iframe {
+article iframe{
 	height: 400px;
 }
-article .article-title h3 {
+article .article-title h3{
 	font-weight: bold;
 	font-size: 3em;
 	margin-bottom: 8px;
 }
-article .article-section {
+article .article-section{
 	font-size: 1.4em;
     font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 6px;
 }
-article .article-section a {
+article .article-section a{
 	color: #EB2828;
 }
-article .article-author {
+article .article-author{
 	font-size: 1.2em;
 }
-.article-author .author-name {
+.article-author .author-name{
 	font-weight: bold;
 }
 
@@ -196,13 +196,40 @@ article .article-author {
 body.admin #mainContent{
 	font-family: helvetica,arial,sans-serif;
 }
-.admin .editor-tool-title {
+.admin .editor-tool-title{
 	margin-bottom: 20px;
 }
-.comicadvisors .form-group label {
+.comicadvisors .form-group label{
 	font-size: 1.8em;
 }
 
+/* Article */
+.article-title{
+	font-weight: bold;
+    margin-bottom: 14px;
+}
+.article-title h2{
+	font-size: 4em;
+}
+.article-primary-asset{
+	margin-bottom: 14px;
+}
+.article-primary-asset img,
+.article-primary-asset iframe {
+	width: 100%;
+}
+.article-info {
+	margin-bottom: 14px; 
+}
+.article-info .article-author,
+.article-info .article-timestamp{
+	font-size: 1.4em;
+	line-height: 18px;
+}
+.article-body p {
+	font-size: 1.6em;
+    line-height: 24px;
+}
 
 
 

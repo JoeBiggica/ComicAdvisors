@@ -117,9 +117,18 @@ if (Meteor.isClient) {
 	// 	}
 	// });
 
-
-
 	function tinymceInit() {
+		tinymce.init({
+			selector: 'textarea.primary-asset',
+			skin_url: '/packages/teamon_tinymce/skins/lightgray',
+			content_css : '/article-editor.css',
+			plugins: 'image media',
+			menubar: '',
+			toolbar: 'image media',
+			image_dimensions: true,
+			image_description: false,
+			image_caption: true
+		});
 		tinymce.init({
 			selector: 'textarea.body',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
@@ -129,17 +138,6 @@ if (Meteor.isClient) {
 			menubar: 'file edit view format insert',
 			toolbar: 'undo redo | styleselect | bold italic | link image media | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
-			image_description: false,
-			image_caption: true
-		});
-		tinymce.init({
-			selector: 'textarea.primary-asset',
-			skin_url: '/packages/teamon_tinymce/skins/lightgray',
-			content_css : '/article-editor.css',
-			plugins: 'image media',
-			menubar: '',
-			toolbar: 'image media',
-			image_dimensions: true,
 			image_description: false,
 			image_caption: true
 		});

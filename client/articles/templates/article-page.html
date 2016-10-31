@@ -1,8 +1,19 @@
 <template name="articlePage">
-	<h2>{{title}}</h2>
-	<div style="width:600px">
-		{{{primaryAsset}}}
-	</div>
-	<p id="articleBody">{{{body}}}</p>
-	<p>by {{author}}</p>
+	<div class="container">
+		<div class="row">
+		  	<div class="col-lg-7">
+		  		<div class="article-title"><h2>{{title}}</h2></div>
+			  	<div class="article-primary-asset">{{{primaryAsset}}}</div>
+			  	<div class="article-info">
+			  		<div class="article-author">By <span class="author-name">{{author}}</span></div>
+			  		<div class="article-timestamp">{{formatDate}}</div>
+			  	</div>
+			  	<div class="article-body">{{{body}}}</div>
+		  	</div>
+		  	<div class="col-lg-3">
+		  		<div class="module-title"><h3>Twitter Feed</h3></div>
+		    	{{> twitterFeed}}
+		  	</div>
+	  	</div>
+  	</div>
 </template>
