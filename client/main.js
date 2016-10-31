@@ -117,14 +117,90 @@ if (Meteor.isClient) {
 	// 	}
 	// });
 
+	// TinyMCE
 	function tinymceInit() {
+		tinymce.PluginManager.add('caimage', function(editor, url) {
+		  editor.addButton('caimage', {
+		    text: 'Image',
+		    icon: false,
+		    onclick: function() {
+		      // Open window
+		      editor.windowManager.open({
+		        title: 'Add Image',
+		        body: [
+		          {type: 'textbox', name: 'source', label: 'Source'},
+		          {type: 'textbox', name: 'caption', label: 'Caption'}
+		        ],
+		        onsubmit: function(e) {
+		          var imageBlock = '<div class="cms-insert"><img src="'+e.data.source+'" alt="Comic Advisors Image"></div>'
+		          if (e.data.caption) {
+		          	var imageBlock = '<div class="cms-insert"><img src="'+e.data.source+'" alt="Comic Advisors Image"><div class="caption">'+e.data.caption+'</div></div>'
+		          }
+		          editor.insertContent(imageBlock);
+		        }
+		      });
+		    }
+		  });
+		  editor.addMenuItem('caimage', {
+		    text: 'CA image plugin',
+		    context: 'tools',
+		    onclick: function() {
+		      // Open window with a specific url
+		      editor.windowManager.open({
+		        title: 'TinyMCE site',
+		        url: 'http://www.tinymce.com',
+		        width: 800,
+		        height: 600,
+		        buttons: [{
+		          text: 'Close',
+		          onclick: 'close'
+		        }]
+		      });
+		    }
+		  });
+		});
+		tinymce.PluginManager.add('cayoutube', function(editor, url) {
+		  editor.addButton('cayoutube', {
+		    text: 'Youtube Video',
+		    icon: false,
+		    onclick: function() {
+		      // Open window
+		      editor.windowManager.open({
+		        title: 'Add Youtube Video',
+		        body: [
+		          {type: 'textbox', name: 'embed', label: 'Embed'},
+		        ],
+		        onsubmit: function(e) {
+		          editor.insertContent('<div class="cms-insert">'+e.data.embed+'</div>');
+		        }
+		      });
+		    }
+		  });
+		  editor.addMenuItem('cayoutube', {
+		    text: 'CA Youtube plugin',
+		    context: 'tools',
+		    onclick: function() {
+		      // Open window with a specific url
+		      editor.windowManager.open({
+		        title: 'TinyMCE site',
+		        url: 'http://www.tinymce.com',
+		        width: 800,
+		        height: 600,
+		        buttons: [{
+		          text: 'Close',
+		          onclick: 'close'
+		        }]
+		      });
+		    }
+		  });
+		});
 		tinymce.init({
 			selector: 'textarea.primary-asset',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/article-editor.css',
-			plugins: 'image media',
+			plugins: 'caimage cayoutube',
 			menubar: '',
-			toolbar: 'image media',
+			toolbar: 'caimage cayoutube',
 			image_dimensions: true,
 			image_description: false,
 			image_caption: true
@@ -134,9 +210,9 @@ if (Meteor.isClient) {
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/resources/css/article-editor.css',
 			body_id: 'caArticleEditor',
-			plugins: 'link image media',
+			plugins: 'link caimage cayoutube',
 			menubar: 'file edit view format insert',
-			toolbar: 'undo redo | styleselect | bold italic | link image media | alignleft aligncenter alignright | bullist numlist',
+			toolbar: 'undo redo | styleselect | bold italic | link caimage cayoutube | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
 			image_description: false,
 			image_caption: true
