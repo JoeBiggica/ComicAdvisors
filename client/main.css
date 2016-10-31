@@ -160,7 +160,7 @@ nav .navbar-nav{
     border-bottom: 1px solid #ccc;
 }
 article .article-photo{
-	height: 400px;
+	height: 368px;
 	overflow: hidden;
 	margin-bottom: 10px;
 }
@@ -169,7 +169,7 @@ article iframe{
 	width: 100%;
 }
 article iframe{
-	height: 400px;
+	height: 368px;
 }
 article .article-title h3{
 	font-weight: bold;
@@ -192,6 +192,61 @@ article .article-author{
 	font-weight: bold;
 }
 
+/* Article */
+.article-title{
+	font-weight: bold;
+    margin-bottom: 14px;
+}
+.article-title h2{
+	font-size: 4em;
+}
+.article-primary-asset{
+	width: 100%;
+	height: 368px;
+	margin-bottom: 14px;
+	overflow: hidden;
+}
+.article-primary-asset img,
+.article-primary-asset iframe{
+	width: 100%;
+}
+.article-primary-asset iframe{
+	height: 368px;
+}
+.article-info{
+	margin-bottom: 14px; 
+}
+.article-info .article-author,
+.article-info .article-timestamp{
+	font-size: 1.4em;
+	line-height: 18px;
+}
+.article-body p{
+	font-family: helvetica,arial,sans-serif;
+	font-size: 1.7em;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.article-body .cms-image{
+	width: 50%;
+	float: left;
+	margin: 6px 20px 20px 0;
+}
+.article-body .cms-image img{
+	width: 100%;
+}
+.article-body .cms-image .caption{
+	margin: 10px 0 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.article-body .cms-youtube{
+	margin-bottom: 20px;
+}
+.article-body .cms-youtube iframe{
+	width: 100%;
+}
+
 /* Editor Tools */
 body.admin #mainContent{
 	font-family: helvetica,arial,sans-serif;
@@ -202,36 +257,6 @@ body.admin #mainContent{
 .comicadvisors .form-group label{
 	font-size: 1.8em;
 }
-
-/* Article */
-.article-title{
-	font-weight: bold;
-    margin-bottom: 14px;
-}
-.article-title h2{
-	font-size: 4em;
-}
-.article-primary-asset{
-	margin-bottom: 14px;
-}
-.article-primary-asset img,
-.article-primary-asset iframe {
-	width: 100%;
-}
-.article-info {
-	margin-bottom: 14px; 
-}
-.article-info .article-author,
-.article-info .article-timestamp{
-	font-size: 1.4em;
-	line-height: 18px;
-}
-.article-body p {
-	font-size: 1.6em;
-    line-height: 24px;
-}
-
-
 
 
 

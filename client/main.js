@@ -132,9 +132,9 @@ if (Meteor.isClient) {
 		          {type: 'textbox', name: 'caption', label: 'Caption'}
 		        ],
 		        onsubmit: function(e) {
-		          var imageBlock = '<div class="cms-insert"><img src="'+e.data.source+'" alt="Comic Advisors Image"></div>'
+		          var imageBlock = '<div class="cms-image"><img src="'+e.data.source+'" alt="Comic Advisors Image"></div>'
 		          if (e.data.caption) {
-		          	var imageBlock = '<div class="cms-insert"><img src="'+e.data.source+'" alt="Comic Advisors Image"><div class="caption">'+e.data.caption+'</div></div>'
+		          	var imageBlock = '<div class="cms-image"><img src="'+e.data.source+'" alt="Comic Advisors Image"><div class="caption">'+e.data.caption+'</div></div>'
 		          }
 		          editor.insertContent(imageBlock);
 		        }
@@ -171,7 +171,7 @@ if (Meteor.isClient) {
 		          {type: 'textbox', name: 'embed', label: 'Embed'},
 		        ],
 		        onsubmit: function(e) {
-		          editor.insertContent('<div class="cms-insert">'+e.data.embed+'</div>');
+		          editor.insertContent('<div class="cms-youtube">'+e.data.embed+'</div>');
 		        }
 		      });
 		    }
