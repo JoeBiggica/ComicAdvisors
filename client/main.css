@@ -176,13 +176,15 @@ article .article-title h3{
 	font-size: 3em;
 	margin-bottom: 8px;
 }
-article .article-section{
+article .article-section,
+.article .article-section{
 	font-size: 1.4em;
     font-weight: bold;
 	text-transform: uppercase;
 	margin-bottom: 6px;
 }
-article .article-section a{
+article .article-section a,
+.article .article-section a{
 	color: #EB2828;
 }
 article .article-author{
@@ -195,10 +197,13 @@ article .article-author{
 /* Article */
 .article-title{
 	font-weight: bold;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 .article-title h2{
 	font-size: 4em;
+}
+.article-meta {
+	margin-bottom: 14px;
 }
 .article-primary-asset{
 	width: 100%;
