@@ -113,7 +113,11 @@ nav .navbar-nav{
 	height: 26px;
 	display: inline-block;
 	background: url(resources/images/core-share-white-color-no-circle-2x.png) no-repeat center;
-	background-size: 148px;
+	background-size: 184px;
+}
+.nav-social .ca-youtube{
+	width: 36px;
+    background-position: -138px -31px;
 }
 .nav-social .ca-twitter{
 	width: 35px;
@@ -126,6 +130,9 @@ nav .navbar-nav{
 .nav-social .ca-instagram{
 	width: 27px;
 	background-position: -70px -31px;
+}
+.nav-social .ca-youtube:hover{
+    background-position: -138px 1px;
 }
 .nav-social .ca-twitter:hover{
     background-position: -29px 0px;
