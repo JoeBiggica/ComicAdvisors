@@ -259,6 +259,13 @@ article .article-author{
 	width: 100%;
 }
 
+/* Footer */
+.comicadvisors footer {
+	border-top: 3px solid #111;
+    margin: 40px 0;
+    padding-top: 20px;
+}
+
 /* Editor Tools */
 body.admin #mainContent{
 	font-family: helvetica,arial,sans-serif;
