@@ -181,7 +181,7 @@ article iframe{
 article .article-title h3{
 	font-weight: bold;
 	font-size: 3em;
-	margin-bottom: 8px;
+	margin-bottom: 6px;
 }
 article .article-section,
 .article .article-section{
@@ -202,15 +202,12 @@ article .article-author{
 }
 
 /* Article */
-.article-title{
+body.article .article-title{
     margin-bottom: 10px;
 }
 .article-title h2{
 	font-size: 4em;
 	font-weight: bold;
-}
-.article-meta {
-	margin-bottom: 14px;
 }
 .article-primary-asset{
 	width: 100%;
@@ -225,13 +222,49 @@ article .article-author{
 .article-primary-asset iframe{
 	height: 368px;
 }
+.article-meta{
+	height: 40px;
+	margin-bottom: 20px;
+}
 .article-info{
-	margin-bottom: 14px; 
+	float: left;
+	width: 60%;
 }
 .article-info .article-author,
 .article-info .article-timestamp{
 	font-size: 1.4em;
 	line-height: 18px;
+}
+.share-tools{
+	float: right;
+}
+.share-tools-list{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.share-tools-list li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.share-tools-list i{
+	width: 37px;
+	height: 37px;
+	display: inline-block;
+	background: url(resources/images/core-share-white-color-circle.png) no-repeat center;
+	background-size: 75px;
+}
+.share-tools-list .share-twitter{
+	background-position: 1px 1px;
+}
+.share-tools-list .share-facebook{
+	background-position: -36px 1px;
+}
+.share-tools-list .share-twitter:hover{
+	background-position: 1px -36px;
+}
+.share-tools-list .share-facebook:hover{
+	background-position: -36px -36px;
 }
 .article-body p{
 	font-family: helvetica,arial,sans-serif;

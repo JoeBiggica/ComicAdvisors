@@ -12,5 +12,12 @@ Template.shareTools.helpers({
 		var titleEncoded = encodeURIComponent(Articles.findOne(this._id).title);
 		var shareURL     = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded;
 		return shareURL;
+	},
+	facebookURL: function() {
+		var url = 'http://comicadvisors.com' + Router.current().route.path(this);
+		var urlEncoded   = encodeURIComponent(url);
+		var titleEncoded = encodeURIComponent(Articles.findOne(this._id).title);
+		var shareURL = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
+		return shareURL;
 	}
 })
