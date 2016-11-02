@@ -46,15 +46,14 @@ p{
 	border-radius: 0;
 }
 nav .navbar-logo{
-	font-weight: bold;
-	text-transform: uppercase;
+	background: url(resources/images/CA_Logo.png) no-repeat center;
+	background-size: 250px;
 	width: 300px;
+	height: 40px;
 	position: absolute;
 	left: 50%;
 	margin-left: -150px;
-	text-align: center;
-	font-size: 24px;
-	padding-top: 12px;
+	margin-top: 7px;
 }
 nav .navbar-logo a{
 	color: #fff;
@@ -311,7 +310,22 @@ body.admin #mainContent{
 }
 
 
-
+@media(max-width:480px){
+	nav .navbar-logo{
+		left: -5px;
+		margin-left: 0;
+	}
+	nav .navbar-left{
+		border-bottom: 1px solid #ccc;
+	}
+	article .article-photo,
+	article iframe,
+	.article-primary-asset,
+	.article-primary-asset iframe,
+	.article-body iframe {
+	    height: 236px;
+	}
+}
 
 
 
