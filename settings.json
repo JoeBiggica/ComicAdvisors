@@ -1,7 +1,9 @@
 {
 	"galaxy.meteor.com": {
 		"env": {
-			"MONGO_URL": "mongodb://<dbuser>:<dbpassword>@<dbserver>:<dbport>/<dbname>"
+			"ROOT_URL": "comicadvisors.meteorapp.com",
+			"MONGO_URL": "mongodb://joebiggica:ImBatman13!@ds141697.mlab.com:41697/comicadvisors",
+			"METEOR_NPM_REBUILD_FLAGS": " "
 		}
 	}
 }

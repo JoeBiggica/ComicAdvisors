@@ -31,4 +31,5 @@ accounts-base@1.2.14
 session@1.1.7
 teamon:tinymce
 kevohagan:sweetalert
-momentjs:moment
+momentjs:moment@=2.15.1
+npm-bcrypt@0.8.7

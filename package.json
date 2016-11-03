@@ -2,11 +2,10 @@
   "name": "comicadvisors",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "start": "meteor run",
+    "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy 'comicadvisors.meteorapp.com' --settings ./settings.json"
   },
   "dependencies": {
-    "bcrypt": "^0.8.7",
-    "fontawesome": "^4.5.0",
-    "meteor-node-stubs": "~0.2.0"
+    "bcrypt": "^0.8.7"
   }
 }
