@@ -1,9 +1,8 @@
 {
 	"galaxy.meteor.com": {
 		"env": {
-			"ROOT_URL": "comicadvisors.meteorapp.com",
-			"MONGO_URL": "mongodb://joebiggica:ImBatman13!@ds141697.mlab.com:41697/comicadvisors",
-			"METEOR_NPM_REBUILD_FLAGS": " "
+			"ROOT_URL": "http://comicadvisors.meteorapp.com",
+			"MONGO_URL": "mongodb://joebiggica:ImBatman13!@ds141697.mlab.com:41697/comicadvisors"
 		}
 	}
 }
