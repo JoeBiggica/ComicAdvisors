@@ -2,7 +2,8 @@
 	"galaxy.meteor.com": {
 		"env": {
 			"ROOT_URL": "http://comicadvisors.meteorapp.com",
-			"MONGO_URL": "mongodb://joebiggica:ImBatman13!@ds143717.mlab.com:43717/comicadvisors"
+			"MONGO_URL": "mongodb://joebiggs:ImBatman13!@comicadvisorsdb-shard-00-00-71gfl.mongodb.net:27017,comicadvisorsdb-shard-00-01-71gfl.mongodb.net:27017,comicadvisorsdb-shard-00-02-71gfl.mongodb.net:27017/admin?ssl=true&replicaSet=ComicAdvisorsDB-shard-0&authSource=admin",
+			"MONGO_OPLOG_URL": "mongodb://ca-staging-oplog:ImBatman13!3@comicadvisorsdb-shard-00-00-71gfl.mongodb.net:27017,comicadvisorsdb-shard-00-01-71gfl.mongodb.net:27017,comicadvisorsdb-shard-00-02-71gfl.mongodb.net:27017/local?authSource=admin&ssl=true&replicaSet=ComicAdvisorsDB-shard-0"
 		}
 	}
 }
