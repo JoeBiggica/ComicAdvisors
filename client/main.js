@@ -21,6 +21,7 @@ if (Meteor.isClient) {
 						password: password,
 						username: username,
 						profile: {
+							accesslevel: 'standard',
 							firstname: firstName,
 							lastname: lastName
 						}

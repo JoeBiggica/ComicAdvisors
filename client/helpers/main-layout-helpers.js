@@ -4,7 +4,7 @@ Template.mainLayout.helpers({
 	},
 	admin: function() {
 		if (Meteor.user()) {
-			if (Meteor.user().username == "joebiggs" || Meteor.user().username == "richrich") {
+			if (Meteor.user().profile.accesslevel == "ca-admin") {
 				return true;
 			}
 		}
