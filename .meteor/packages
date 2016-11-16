@@ -32,3 +32,4 @@ kevohagan:sweetalert
 momentjs:moment@=2.15.1
 npm-bcrypt@0.8.7
 dfischer:prerenderio
+kadira:dochead
