@@ -6,6 +6,7 @@
     "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy 'comicadvisors.meteorapp.com' --settings ./settings.json"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "meteor-node-stubs": "~0.2.0",
+    "prerender-node": "^2.5.0"
   }
 }
