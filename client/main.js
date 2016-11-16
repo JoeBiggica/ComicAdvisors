@@ -222,9 +222,11 @@ if (Meteor.isClient) {
 
 	Template.newArticle.rendered = function() {
 		tinymceInit();
+		$('form').attr('novalidate','');
 	}
 
 	Template.articleUpdate.rendered = function() {
 		tinymceInit();
+		$('form').attr('novalidate','');
 	}
 }
