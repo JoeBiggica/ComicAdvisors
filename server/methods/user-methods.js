@@ -14,8 +14,9 @@ Meteor.methods({
 		var userFind = Meteor.users.findOne({username:username});
 		 if (userFind) {
 		 	return true;
-		 } else {
 		 	console.log('User Already Exists');
+		 } else {
+		 	
 		 }
 	},
 	getUserId: function(username) {
