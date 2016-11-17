@@ -1,6 +1,11 @@
 {
-  "PrerenderIO": {
-    "serviceUrl": "http://localhost:3000/",
-    "token": "5g5QKXsezDnVFY2cSUrN"
-  }
+	"galaxy.meteor.com": { 
+	    "env": { 
+	    	"MONGO_URL": "mongodb://batman:ImBatman13!@aws-us-east-1-portal.11.dblayer.com:15311,aws-us-east-1-portal.10.dblayer.com:15311/admin?ssl=true" 
+	    } 
+	},
+	"PrerenderIO": {
+		"serviceUrl": "http://localhost:3000/",
+		"token": "5g5QKXsezDnVFY2cSUrN"
+	}
 }
