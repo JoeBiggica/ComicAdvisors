@@ -47,6 +47,7 @@ p{
 .comicadvisors nav{
 	background: #080808;
 	border-radius: 0;
+	border: none;
 }
 nav .navbar-logo{
 	background: url(resources/images/CA_Logo.png) no-repeat center;
@@ -296,13 +297,13 @@ body.article .article-title{
 }
 
 /* Footer */
-.comicadvisors footer {
+.comicadvisors footer{
 	border-top: 3px solid #111;
     margin: 40px 0;
     padding-top: 20px;
 }
 
-footer h2 {
+footer h2{
 	margin-bottom: 10px;
 }
 
@@ -317,10 +318,43 @@ body.admin #mainContent{
 	font-size: 1.8em;
 }
 
+@media(max-width:1200px){
+	nav .navbar-nav {
+	    font-size: 1.2em;
+	}
+	.nav > li > a {
+	    position: relative;
+	    display: block;
+	    padding: 16px 10px 10px;
+	}
+	nav .navbar-logo {
+	    background-size: 250px;
+	}
+}
+
+@media(max-width:992px){
+	.nav > li > a {
+	    position: relative;
+	    display: block;
+	    padding: 16px 4px 10px;
+	}
+}
+
+@media(max-width:768px){
+	.nav > li > a {
+	    position: relative;
+	    display: block;
+	    padding: 15px 15px;
+	}
+	nav .navbar-nav {
+	    font-size: 1.4em;
+	}
+}
 
 @media(max-width:480px){
 	nav .navbar-logo{
-		left: -5px;
+		width: 235px;
+		left: 10px;
 		margin-left: 0;
 	}
 	nav .navbar-left{
