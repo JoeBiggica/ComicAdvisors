@@ -34,3 +34,5 @@ npm-bcrypt@0.8.7
 kadira:dochead
 mdg:seo
 dferber:prerender
+meteorhacks:ssr
+spiderable
