@@ -17,5 +17,20 @@ Meteor.methods({
   updateArticle: function(id) {
     var article = Articles.find(id);
     return article;
+  },
+  ssrArticle: function(id) {
+    SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-amp.html'));
+    var article = Articles.findOne(id);
+    var html = SSR.render('articlePageAMP', {
+      doctype: '<!DOCTYPE html>',
+      section: article.section,
+      title: article.title,
+      primaryAsset: article.primaryAsset,
+      author: article.author,
+      formatDate: moment(article.createdAt).format('MMM, DD YYYY'),
+      body: article.body
+    });
+    console.log('article requested');
+    return html;
   }
 });

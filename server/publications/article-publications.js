@@ -9,5 +9,3 @@ Meteor.publish('singleArticle', function(id) {
 Meteor.publish('sectionArticles', function(section) {
 	return Articles.find({section: section});
 });
-
-SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-amp.html'));

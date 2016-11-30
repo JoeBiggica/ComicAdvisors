@@ -1,1 +1,84 @@
-<h1>TEST</h1>
+{{{doctype}}}
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="fragment" content="!">
+	  	<title>Comic Advisors</title>
+	  
+		<meta name="site edition" content="Comic Advisors" />
+		<link rel="canonical" href="https://www.comicadvisors.com/" />
+		<link rel="image_src" href="https://www.comicadvisors.com/resources/images/CA_Logo_default.png" />
+		<meta name="author" content="Comic Advisors Editorial" />
+		<meta name="description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
+		<meta name="keywords" content="Comics,Comic Books,Batman,Superman,Wonder Woman" />
+		<meta name="twitter:card" content="summary_large_image" /> 
+		<meta name="twitter:description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
+		<meta name="twitter:image:src" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png">
+		<meta name="twitter:image" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png" />
+		<meta name="twitter:site" content="@ComicAdvisors" />
+		<meta name="twitter:creator" content="@ComicAdvisor" />
+		<link rel="publisher" href="https://plus.google.com/+ComicAdvisors" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Comic Advisors" />
+		<meta property="og:title" content="Comic Advisors" />
+		<meta property="og:url" content="https://www.comicadvisors.com/" />
+		<meta property="og:type" content="section" />
+		<meta property="og:description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
+		<meta property="og:image" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png"/>
+		<meta property="article:publisher" content="https://www.facebook.com/ComicAdvisors" />
+
+		<script type="application/ld+json">
+		    {
+		        "@context": "https://schema.org",
+		        "@type": "WebPage",
+		        "headline": "Comic Advisors",
+		        "url": "https://www.comicadvisors.com/", 
+		        "thumbnailUrl": "https://www.comicadvisors.com/resources/images/CA_Logo_default.png",
+		        "dateCreated": "",
+		        "description": "Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way.",
+		        "publisher": "Comic Advisors",
+		        "creator": [],
+		        "keywords": ["Comics","Comic Books","Batman","Superman","Wonder Woman"]
+		    }
+		</script>
+
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.comicadvisors.com/resources/images/ca-favicon.ico" />
+		<link rel="icon" type="image/png" href="https://www.comicadvisors.com/resources/images/icon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="https://www.comicadvisors.com/resources/images/icon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="https://www.comicadvisors.com/resources/images/icon-96x96.png" sizes="96x96" />
+		<link rel="stylesheet" href="/main.css">
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-87769603-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</head>
+	<body>
+	<div class="container">
+	<div class="row">
+	  	<div class="col-lg-10">
+	  		<div class="article-section"><a href="/section/{{section}}">{{section}}</a></div>
+	  		<div class="article-title"><h2>{{title}}</h2></div>
+		  	<div class="article-primary-asset">{{{primaryAsset}}}</div>
+		  	<div class="article-meta">
+			  	<div class="article-info">
+			  		<div class="article-author">By <span class="author-name">{{author}}</span></div>
+			  		<div class="article-timestamp">{{formatDate}}</div>
+			  	</div>
+			  	<div class="share-tools">
+	  				<!-- {{> shareTools}} -->
+	  			</div>
+				</div>
+		  	<div class="article-body">{{{body}}}</div>
+	  	</div>
+		</div>
+	</div>
+	</body>
+</html>

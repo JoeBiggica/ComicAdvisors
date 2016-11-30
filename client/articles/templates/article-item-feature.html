@@ -1,16 +1,16 @@
 <template name="articleItemFeature">
 	<article class="article">
-		{{#linkTo route='singleArticle'}}
+		<a href="/article/{{title}}/id:{{_id}}">
 			<div class="article-photo">
 				{{{primaryAsset}}}
 			</div>
-		{{/linkTo}}
+		</a>
 		<div class="article-section"><a href="/section/{{section}}">{{section}}</a></div>
-		{{#linkTo route='singleArticle'}}
+		<a href="/article/{{title}}/id:{{_id}}">
 			<div class="article-title">
 				<h3>{{title}}</h3>
 			</div>
-		{{/linkTo}}
+		</a>
 		<div class="article-author">By <span class="author-name">{{author}}</span></div>
 	</article>
 </template>
