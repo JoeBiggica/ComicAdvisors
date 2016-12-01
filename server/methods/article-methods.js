@@ -19,7 +19,7 @@ Meteor.methods({
     return article;
   },
   ssrArticle: function(id) {
-    SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-amp.html'));
+    SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-static.html'));
     var article      = Articles.findOne(id),
         url          = 'https://www.comicadvisors.com/article/'+encodeURIComponent(article.title)+'/id:'+article._id,
         urlEncoded   = encodeURIComponent(url),
