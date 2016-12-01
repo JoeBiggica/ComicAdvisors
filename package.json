@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy 'comicadvisors.meteorapp.com' --settings ./settings.json"
+    "deploy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy 'www.comicadvisors.com' --settings ./settings.json"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0",
