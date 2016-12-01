@@ -19,7 +19,7 @@ Meteor.methods({
     return article;
   },
   ssrArticle: function(id) {
-    SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-static.html'));
+    SSR.compileTemplate('articlePageStatic', Assets.getText('article-page-static.html'));
     var article      = Articles.findOne(id),
         url          = 'https://www.comicadvisors.com/article/'+encodeURIComponent(article.title)+'/id:'+article._id,
         urlEncoded   = encodeURIComponent(url),
@@ -27,7 +27,7 @@ Meteor.methods({
         twitterURL   = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
         facebookURL  = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
 
-    var html = SSR.render('articlePageAMP', {
+    var html = SSR.render('articlePageStatic', {
       doctype: '<!DOCTYPE html>',
       url: url,
       section: article.section,
