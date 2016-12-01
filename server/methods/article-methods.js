@@ -20,7 +20,13 @@ Meteor.methods({
   },
   ssrArticle: function(id) {
     SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-amp.html'));
-    var article = Articles.findOne(id);
+    var article      = Articles.findOne(id),
+        url          = 'https://www.comicadvisors.com/article/'+article.title+'/id:'+article._id,
+        urlEncoded   = encodeURIComponent(url),
+        titleEncoded = encodeURIComponent(article.title),
+        twitterURL   = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
+        facebookURL  = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
+
     var html = SSR.render('articlePageAMP', {
       doctype: '<!DOCTYPE html>',
       section: article.section,
@@ -28,9 +34,10 @@ Meteor.methods({
       primaryAsset: article.primaryAsset,
       author: article.author,
       formatDate: moment(article.createdAt).format('MMM, DD YYYY'),
-      body: article.body
+      body: article.body,
+      twitterURL: twitterURL,
+      facebookURL: facebookURL
     });
-    console.log('article requested');
     return html;
   }
 });
