@@ -3,43 +3,76 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="fragment" content="!">
-	  	<title>Comic Advisors</title>
-	  
+	  	<title>Comic Advisors: {{title}}</title>  
 		<meta name="site edition" content="Comic Advisors" />
-		<link rel="canonical" href="https://www.comicadvisors.com/" />
-		<link rel="image_src" href="https://www.comicadvisors.com/resources/images/CA_Logo_default.png" />
-		<meta name="author" content="Comic Advisors Editorial" />
-		<meta name="description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
-		<meta name="keywords" content="Comics,Comic Books,Batman,Superman,Wonder Woman" />
-		<meta name="twitter:card" content="summary_large_image" /> 
-		<meta name="twitter:description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
-		<meta name="twitter:image:src" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png">
-		<meta name="twitter:image" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png" />
-		<meta name="twitter:site" content="@ComicAdvisors" />
-		<meta name="twitter:creator" content="@ComicAdvisor" />
+		<meta property="article:publisher" content="https://www.facebook.com/ComicAdvisors" />
 		<link rel="publisher" href="https://plus.google.com/+ComicAdvisors" />
+		<link rel="canonical" href="{{url}}" />
+		<link rel="image_src" href="{{image}}" />
+		<meta name="author" content="{{author}}" />
+		<meta name="description" content="{{description}}" />
+		<meta name="keywords" content="{{keywords}}" />
+
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:site_name" content="Comic Advisors" />
-		<meta property="og:title" content="Comic Advisors" />
-		<meta property="og:url" content="https://www.comicadvisors.com/" />
-		<meta property="og:type" content="section" />
-		<meta property="og:description" content="Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way." />
-		<meta property="og:image" content="https://www.comicadvisors.com/resources/images/CA_Logo_default.png"/>
-		<meta property="article:publisher" content="https://www.facebook.com/ComicAdvisors" />
+		<meta property="og:title" content="{{title}}" />
+		<meta property="og:url" content="{{url}}" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="{{description}}" />
+		<meta property="og:image" content="{{image}}"/>
+		<meta property="og:article:published_time" content="{{dateUTC}}"/>
+		<meta property="og:article:modified_time" content="{{dateUTC}}"/>
+		<meta property="og:article:section" content="{{section}}"/>
+		<meta property="og:article:author" content="{{author}}"/>
+		<meta property="og:article:tag" content="{{keywords}}"/>
+
+		<meta name="twitter:card" content="summary_large_image" /> 
+		<meta name="twitter:description" content="{{description}}" />
+		<meta name="twitter:image:src" content="{{image}}">
+		<meta name="twitter:image" content="{{image}}" />
+		<meta name="twitter:site" content="@ComicAdvisors" />
+		<meta name="twitter:creator" content="@ComicAdvisors" />
+		
 
 		<script type="application/ld+json">
 		    {
-		        "@context": "https://schema.org",
-		        "@type": "WebPage",
-		        "headline": "Comic Advisors",
-		        "url": "https://www.comicadvisors.com/", 
-		        "thumbnailUrl": "https://www.comicadvisors.com/resources/images/CA_Logo_default.png",
-		        "dateCreated": "",
-		        "description": "Comic Advisors is streamlining an approach to a more inclusive and less intimidating comic book experience, and making some fun videos along the way.",
-		        "publisher": "Comic Advisors",
-		        "creator": [],
-		        "keywords": ["Comics","Comic Books","Batman","Superman","Wonder Woman"]
+		        "@context": "http://schema.org",
+		        "@type": "NewsArticle",
+		        "mainEntityOfPage": {
+		            "@type": "WebPage",
+		            "@id": "{{url}}"
+		        },
+		        "headline": "{{title}}",
+		        "url": "{{url}}",
+		        "image": {
+		            "@type": "ImageObject",
+		            "url": "{{image}}",
+		            "width": "800",
+		            "height": "800"
+		        },
+		        "thumbnailUrl": "{{image}}",
+		        "dateCreated": "{{dateUTC}}",
+		        "dateModified": "{{dateUTC}}",
+		        "datePublished": "{{dateUTC}}",
+		        "author": {
+		            "@type": "Person",
+		            "name": "{{author}}"
+		        },
+		        "publisher": {
+		            "@type": "Organization",
+		            "name": "Comic Advisors",
+		            "logo": {
+		                "@type": "ImageObject",
+		                "url": "https://www.comicadvisors.com/resources/images/CA_Logo.png",
+		                "width": "200",
+		                "height": "200"
+		            }
+		        },
+		        "description": "{{description}}",
+		        "articleSection": "{{section}}",
+		        "creator": ["{{author}}"],
+		        "keywords": ["{{keywords}}"],
+		        "about":"Article" 
 		    }
 		</script>
 

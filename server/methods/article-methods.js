@@ -21,7 +21,7 @@ Meteor.methods({
   ssrArticle: function(id) {
     SSR.compileTemplate('articlePageAMP', Assets.getText('article-page-amp.html'));
     var article      = Articles.findOne(id),
-        url          = 'https://www.comicadvisors.com/article/'+article.title+'/id:'+article._id,
+        url          = 'https://www.comicadvisors.com/article/'+encodeURIComponent(article.title)+'/id:'+article._id,
         urlEncoded   = encodeURIComponent(url),
         titleEncoded = encodeURIComponent(article.title),
         twitterURL   = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
@@ -29,12 +29,17 @@ Meteor.methods({
 
     var html = SSR.render('articlePageAMP', {
       doctype: '<!DOCTYPE html>',
+      url: url,
       section: article.section,
       title: article.title,
       primaryAsset: article.primaryAsset,
       author: article.author,
       formatDate: moment(article.createdAt).format('MMM, DD YYYY'),
       body: article.body,
+      description: article.description,
+      image: article.imageSrc, 
+      keywords: article.tags,
+      dateUTC: article.createdAt,
       twitterURL: twitterURL,
       facebookURL: facebookURL
     });
