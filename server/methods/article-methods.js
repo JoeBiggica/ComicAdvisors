@@ -3,16 +3,21 @@ Meteor.methods({
   	var user = Meteor.user();
   	if (!user)
   		throw new Meteor.Error(401, 'You need to log in first');
+      
+      var articleSlug = article.title.toLowerCase();
+      articleSlug = articleSlug.replace(/(^\s+|[^a-zA-Z0-9 ]+|\s+$)/g,"");
+      articleSlug = articleSlug.replace(/\s+/g, "-");
+      console.log(articleSlug)
+      var additionalParams = {
+        createdAt: new Date(),
+        userId: user._id,
+        slug: articleSlug
+      }
 
-    var additionalParams = {
-      createdAt: new Date(),
-      userId: user._id
-    }
+      _.extend(article, additionalParams);
+      article._id = Articles.insert(article);
 
-    _.extend(article, additionalParams);
-    article._id = Articles.insert(article);
-
-    return article;
+      return article;
   },
   updateArticle: function(id) {
     var article = Articles.find(id);
