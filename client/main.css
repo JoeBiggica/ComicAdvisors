@@ -318,6 +318,11 @@ body.admin #mainContent{
 	font-size: 1.8em;
 }
 
+/* Not Found */
+.not-found-container{
+	text-align: center;
+}
+
 @media(max-width:1200px){
 	nav .navbar-nav {
 	    font-size: 1.2em;
