@@ -26,7 +26,7 @@ Meteor.methods({
   ssrArticle: function(id) {
     SSR.compileTemplate('articlePageStatic', Assets.getText('article-page-static.html'));
     var article      = Articles.findOne(id),
-        url          = 'https://www.comicadvisors.com/article/'+article.slug+'/'+article._id,
+        url          = 'http://www.comicadvisors.com/article/'+article.slug+'/'+article._id,
         urlEncoded   = encodeURIComponent(url),
         titleEncoded = encodeURIComponent(article.title),
         twitterURL   = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
