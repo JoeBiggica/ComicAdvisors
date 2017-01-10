@@ -25,12 +25,15 @@ Meteor.methods({
   },
   ssrArticle: function(id) {
     SSR.compileTemplate('articlePageStatic', Assets.getText('article-page-static.html'));
-    var article      = Articles.findOne(id),
-        url          = 'http://www.comicadvisors.com/article/'+article.slug+'/'+article._id,
-        urlEncoded   = encodeURIComponent(url),
-        titleEncoded = encodeURIComponent(article.title),
-        twitterURL   = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
-        facebookURL  = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
+    var article        = Articles.findOne(id),
+        url            = 'http://www.comicadvisors.com/article/'+article.slug+'/'+article._id,
+        urlEncoded     = encodeURIComponent(url),
+        titleEncoded   = encodeURIComponent(article.title),
+        keywords       = article.tags.replace(/, /g,','),
+        newsKeywords   = keywords.replace(/,/g,';'),
+        schemaKeywords = keywords.replace(/"/g, '\\"').replace(/\'/g, '\\u0027').replace(/,/g, '\",\"'),
+        twitterURL     = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
+        facebookURL    = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
 
     var html = SSR.render('articlePageStatic', {
       doctype: '<!DOCTYPE html>',
@@ -43,7 +46,9 @@ Meteor.methods({
       body: article.body,
       description: article.description,
       image: article.imageSrc, 
-      keywords: article.tags,
+      keywords: keywords,
+      newsKeywords: newsKeywords,
+      schemaKeywords: schemaKeywords,
       dateUTC: article.createdAt,
       twitterURL: twitterURL,
       facebookURL: facebookURL
