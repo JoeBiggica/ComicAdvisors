@@ -295,6 +295,9 @@ body.article .article-title{
 .article-body .cms-youtube iframe{
 	width: 100%;
 }
+.article-body .cms-tweet {
+	margin-bottom: 20px;
+}
 
 /* Footer */
 .comicadvisors footer{
@@ -360,11 +363,10 @@ body.admin #mainContent{
 	nav .navbar-left{
 		border-bottom: 1px solid #ccc;
 	}
-	article .article-photo,
 	article iframe,
 	.article-primary-asset,
 	.article-primary-asset iframe,
-	.article-body iframe {
+	.article-body iframe{
 	    height: 236px;
 	}
 	.right-rail{

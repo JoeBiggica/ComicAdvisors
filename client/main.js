@@ -195,6 +195,41 @@ if (Meteor.isClient) {
 		    }
 		  });
 		});
+		tinymce.PluginManager.add('catweet', function(editor, url) {
+		  editor.addButton('catweet', {
+		    text: 'Tweet',
+		    icon: false,
+		    onclick: function() {
+		      // Open window
+		      editor.windowManager.open({
+		        title: 'Add Tweet',
+		        body: [
+		          {type: 'textbox', name: 'embed', label: 'Tweet Embed'},
+		        ],
+		        onsubmit: function(e) {
+		          editor.insertContent('<div class="cms-tweet">'+e.data.embed+'</div>');
+		        }
+		      });
+		    }
+		  });
+		  editor.addMenuItem('catweet', {
+		    text: 'CA Tweet plugin',
+		    context: 'tools',
+		    onclick: function() {
+		      // Open window with a specific url
+		      editor.windowManager.open({
+		        title: 'TinyMCE site',
+		        url: 'http://www.tinymce.com',
+		        width: 800,
+		        height: 600,
+		        buttons: [{
+		          text: 'Close',
+		          onclick: 'close'
+		        }]
+		      });
+		    }
+		  });
+		});
 		tinymce.init({
 			selector: 'textarea.primary-asset',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
@@ -211,9 +246,9 @@ if (Meteor.isClient) {
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/resources/css/article-editor.css',
 			body_id: 'caArticleEditor',
-			plugins: 'link caimage cayoutube',
+			plugins: 'link caimage cayoutube catweet',
 			menubar: 'file edit view format insert',
-			toolbar: 'undo redo | styleselect | bold italic | link caimage cayoutube | alignleft aligncenter alignright | bullist numlist',
+			toolbar: 'undo redo | styleselect | bold italic | link caimage cayoutube catweet | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
 			image_description: false,
 			image_caption: true
