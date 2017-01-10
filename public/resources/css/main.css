@@ -209,7 +209,7 @@ article .article-author{
 body.article .article-title{
     margin-bottom: 10px;
 }
-.article-title h2{
+.article-title h1{
 	font-size: 4em;
 	font-weight: bold;
 }
