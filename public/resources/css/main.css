@@ -298,9 +298,13 @@ body.article .article-title{
 .article-body .cms-tweet {
 	margin-bottom: 20px;
 }
+.article-body .cms-quote{
+    font-family: times new roman,helvetica,arial,sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+}
 .article-body .cms-quote .quote{
 	font-size: 72px;
-    font-family: times new roman,helvetica,arial,sans-serif;
     color: #EB2828;
     vertical-align: bottom;
 }
