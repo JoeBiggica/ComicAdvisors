@@ -41,7 +41,7 @@ if (Meteor.isClient) {
 			Meteor.loginWithPassword(email, password, function(error) {
 				if (error) {
 					swal({
-						title: "Not Even Good",
+						title: "Not Even Good!",
 						text: "You forgot your username or password dummy.",
 						type: "error",
 						confirmButtonColor: "#DD6B55",
@@ -96,7 +96,7 @@ if (Meteor.isClient) {
 				});
 			} else {
 				swal({
-					title: "Access Denied",
+					title: "BAD!",
 					text: "You cannot delete an article you do not own.",
 					type: "error",
 					confirmButtonColor: "#DD6B55",
@@ -167,9 +167,9 @@ if (Meteor.isClient) {
 		    onclick: function() {
 		      // Open window
 		      editor.windowManager.open({
-		        title: 'Add Youtube Video',
+		        title: 'Add YouTube Video',
 		        body: [
-		          {type: 'textbox', name: 'embed', label: 'Embed'},
+		          {type: 'textbox', name: 'embed', label: 'YouTube Embed'},
 		        ],
 		        onsubmit: function(e) {
 		          editor.insertContent('<div class="cms-youtube">'+e.data.embed+'</div>');
@@ -204,10 +204,10 @@ if (Meteor.isClient) {
 		      editor.windowManager.open({
 		        title: 'Add Tweet',
 		        body: [
-		          {type: 'textbox', name: 'embed', label: 'Tweet Embed'},
+		          {type: 'textbox', name: 'tweet', label: 'Tweet Embed'},
 		        ],
 		        onsubmit: function(e) {
-		          editor.insertContent('<div class="cms-tweet">'+e.data.embed+'</div>');
+		          editor.insertContent('<div class="cms-tweet">'+e.data.tweet+'</div>');
 		        }
 		      });
 		    }
