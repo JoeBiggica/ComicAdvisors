@@ -120,6 +120,41 @@ if (Meteor.isClient) {
 
 	// TinyMCE
 	function tinymceInit() {
+		tinymce.PluginManager.add('caquote', function(editor, url) {
+		  editor.addButton('caquote', {
+		    text: 'Quote',
+		    icon: false,
+		    onclick: function() {
+		      // Open window
+		      editor.windowManager.open({
+		        title: 'Add Quote',
+		        body: [
+		          {type: 'textbox', name: 'quote', label: 'Quote'}
+		        ],
+		        onsubmit: function(e) {
+		          editor.insertContent('<div class="cms-quote">'+e.data.quote+'</div>');
+		        }
+		      });
+		    }
+		  });
+		  editor.addMenuItem('caquote', {
+		    text: 'CA quote plugin',
+		    context: 'tools',
+		    onclick: function() {
+		      // Open window with a specific url
+		      editor.windowManager.open({
+		        title: 'TinyMCE site',
+		        url: 'http://www.tinymce.com',
+		        width: 800,
+		        height: 600,
+		        buttons: [{
+		          text: 'Close',
+		          onclick: 'close'
+		        }]
+		      });
+		    }
+		  });
+		});
 		tinymce.PluginManager.add('caimage', function(editor, url) {
 		  editor.addButton('caimage', {
 		    text: 'Image',
@@ -246,9 +281,9 @@ if (Meteor.isClient) {
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
 			content_css : '/resources/css/article-editor.css',
 			body_id: 'caArticleEditor',
-			plugins: 'link caimage cayoutube catweet',
-			menubar: 'file edit view format insert',
-			toolbar: 'undo redo | styleselect | bold italic | link caimage cayoutube catweet | alignleft aligncenter alignright | bullist numlist',
+			plugins: 'link caquote caimage cayoutube catweet',
+			menubar: 'file edit view format',
+			toolbar: 'undo redo | styleselect | bold italic | link caquote caimage cayoutube catweet | alignleft aligncenter alignright | bullist numlist',
 			image_dimensions: false,
 			image_description: false,
 			image_caption: true
