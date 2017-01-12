@@ -173,6 +173,8 @@ article .article-photo{
 	height: 368px;
 	overflow: hidden;
 	margin-bottom: 10px;
+	background: #1a1a1a;
+	position: relative;
 }
 article img,
 article iframe{
@@ -206,7 +208,7 @@ article .article-author{
 }
 
 /* Article */
-body.article .article-title{
+/*body.article .article-title{
     margin-bottom: 10px;
 }
 .article-title h1{
@@ -294,7 +296,7 @@ body.article .article-title{
 }
 .article-body .cms-youtube iframe{
 	width: 100%;
-}
+}*/
 
 /* Footer */
 .comicadvisors footer{
@@ -354,6 +356,11 @@ body.admin #mainContent{
 	nav .navbar-nav {
 	    font-size: 1.4em;
 	}
+	article .article-photo img{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 @media(max-width:480px){
@@ -365,12 +372,8 @@ body.admin #mainContent{
 	nav .navbar-left{
 		border-bottom: 1px solid #ccc;
 	}
-	article .article-photo,
-	article iframe,
-	.article-primary-asset,
-	.article-primary-asset iframe,
-	.article-body iframe {
-	    height: 176px;
+	article .article-photo{
+	    height: 236px;
 	}
 	.right-rail{
 		display: none;
