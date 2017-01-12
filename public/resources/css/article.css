@@ -139,4 +139,8 @@ body.article .article-title{
 	    width: 100%;
 	    margin: 0 0 20px 0;
 	}
+	.article-body .cms-quote {
+	    width: 90%;
+	    margin: 0 auto 10px;
+	}
 }

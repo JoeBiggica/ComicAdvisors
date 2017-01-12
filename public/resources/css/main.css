@@ -167,7 +167,7 @@ nav .navbar-nav{
 .comicadvisors .navbar-default .navbar-toggle:focus{
 	background: none;
 }
-.comicadvisors .navbar-toggle.collapsed .icon-bar{
+.comicadvisors .navbar-toggle.collapsed{
 	transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -175,7 +175,7 @@ nav .navbar-nav{
     -moz-transition: transform .3s;
     transition: transform .3s;
 }
-.comicadvisors .navbar-toggle .icon-bar{
+.comicadvisors .navbar-toggle{
 	transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
