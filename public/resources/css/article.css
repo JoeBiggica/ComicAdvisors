@@ -1,160 +1,5 @@
 /* Comic Advisors Article Stylesheet */
 
-html{
-    font-family:avenir,helvetica,arial,sans-serif;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
-}
-body.comicadvisors{
-	margin:0;
-	font-family:avenir,helvetica,arial,sans-serif;
-	font-weight:400;
-    font-size:10px;
-    line-height:1.125;
-}
-.comicadvisors a{
-    background-color:transparent;
-    text-decoration: none;
-    color: #EB2828;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
-}
-.comicadvisors a:active,
-.comicadvisors a:hover{
-    outline:0;
-    text-decoration: none;
-}
-.comicadvisors.admin a{
-    color: #111;
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6, p { margin: 0; }
-
-h1 { font-size: 3.6em; }
-h2 { font-size: 3em; }
-h3 { font-size: 2.4em; }
-h4 { font-size: 1.8em; }
-h5 { font-size: 1.4em; }
-h6 { font-size: 1.2em; }
-
-p{
-    font-size: 1.4em;
-    line-height: 24px;
-}
-
-/* Nav */
-.comicadvisors nav{
-	background: #080808;
-	border-radius: 0;
-	border: none;
-}
-nav .navbar-logo{
-	background: url(../images/CA_Logo.png) no-repeat center;
-	background-size: 250px;
-	width: 300px;
-	height: 40px;
-	position: absolute;
-	left: 50%;
-	margin-left: -150px;
-	margin-top: 7px;
-}
-nav .navbar-logo a{
-	color: #fff;
-	display: inline-block;
-    position: relative;
-    width: 100%;
-}
-nav .navbar-logo .logo-left{
-	position: absolute;
-    left: 51px;
-}
-nav .navbar-logo .logo-right{
-	position: absolute;
-    right: 12px;
-}
-nav .logo{
-	width: 34px;
-    height: 33px;
-    margin-top: -3px;
-    display: inline-block;
-    background: url(../images/Social_Icon-circle-black.png) no-repeat center;
-    background-size: 33px;
-}
-nav .navbar-nav{
-	font-size: 1.4em;
-}
-.comicadvisors .navbar-nav > li > a,
-.comicadvisors .navbar-default .navbar-nav > .open > a,
-.comicadvisors nav .dropdown-menu > li > a{
-	color: #fff !important;
-} 
-.comicadvisors .navbar-nav > li > a:hover,
-.comicadvisors .navbar-nav > li > a:hover{
-	color: #EB2828 !important;
-} 
-.comicadvisors .navbar-default .navbar-nav > .open > a{
-	background: #333;
-}
-.comicadvisors nav .dropdown-menu{
-	border: none;
-	background: #333 !important;
-}
-.comicadvisors .dropdown-menu > li > a:hover, 
-.comicadvisors .dropdown-menu > li > a:focus{
-	color: #EB2828 !important;
-	background: none;
-}
-.nav-social{
-	padding: 12px 0;
-}
-.nav-social li{
-	display: inline-block;
-	margin-left: 14px;
-}
-.nav-social i{
-	height: 26px;
-	display: inline-block;
-	background: url(../images/core-share-white-color-no-circle-2x.png) no-repeat center;
-	background-size: 184px;
-}
-.nav-social .ca-youtube{
-	width: 36px;
-    background-position: -138px -31px;
-}
-.nav-social .ca-twitter{
-	width: 35px;
-    background-position: -29px -31px;
-}
-.nav-social .ca-facebook{
-	width: 14px;
-	background-position: -9px -31px;
-}
-.nav-social .ca-instagram{
-	width: 27px;
-	background-position: -70px -31px;
-}
-.nav-social .ca-youtube:hover{
-    background-position: -138px 1px;
-}
-.nav-social .ca-twitter:hover{
-    background-position: -29px 0px;
-}
-.nav-social .ca-facebook:hover{
-    background-position: -9px 0px;
-}
-.nav-social .ca-instagram:hover{
-    background-position: -70px 0px;
-}
-.comicadvisors .navbar-collapse{
-	border: none;
-	background: #080808;
-}
-.comicadvisors .navbar-fixed-top .navbar-collapse, 
-.comicadvisors .navbar-fixed-bottom .navbar-collapse{
-	max-height: none;
-}
-
 /* Article */
 body.article .article-title{
     margin-bottom: 10px;
@@ -269,59 +114,13 @@ body.article .article-title{
     margin: 0 10px;
 }
 
-/* Footer */
-.comicadvisors footer{
-	border-top: 3px solid #111;
-    margin: 40px 0;
-    padding-top: 20px;
-}
-
-footer h2{
-	margin-bottom: 10px;
-}
-
-/* Editor Tools */
-body.admin #mainContent{
-	font-family: helvetica,arial,sans-serif;
-}
-.admin .editor-tool-title{
-	margin-bottom: 20px;
-}
-.comicadvisors .form-group label{
-	font-size: 1.8em;
-}
-
 @media(max-width:1200px){
-	nav .navbar-nav {
-	    font-size: 1.2em;
-	}
-	.nav > li > a {
-	    position: relative;
-	    display: block;
-	    padding: 16px 10px 10px;
-	}
-	nav .navbar-logo {
-	    background-size: 250px;
-	}
 }
 
 @media(max-width:992px){
-	.nav > li > a {
-	    position: relative;
-	    display: block;
-	    padding: 16px 4px 10px;
-	}
 }
 
 @media(max-width:768px){
-	.nav > li > a {
-	    position: relative;
-	    display: block;
-	    padding: 15px 15px;
-	}
-	nav .navbar-nav {
-	    font-size: 1.4em;
-	}
 	.article-primary-asset img,
 	.article-primary-asset iframe{
 		position: absolute;
@@ -331,15 +130,6 @@ body.admin #mainContent{
 }
 
 @media(max-width:480px){
-	nav .navbar-logo{
-		width: 235px;
-		left: 10px;
-		margin-left: 0;
-	}
-	nav .navbar-left{
-		border-bottom: 1px solid #ccc;
-	}
-	article iframe,
 	.article-primary-asset,
 	.article-primary-asset iframe,
 	.article-body iframe{
@@ -349,11 +139,4 @@ body.admin #mainContent{
 	    width: 100%;
 	    margin: 0 0 20px 0;
 	}
-	.right-rail{
-		display: none;
-	}
 }
-
-
-
-
