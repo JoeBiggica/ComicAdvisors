@@ -225,6 +225,7 @@ body.article .article-title{
 }
 .article-primary-asset iframe{
 	height: 368px;
+	max-width: 100% !important;
 }
 .article-meta{
 	height: 40px;
@@ -293,7 +294,7 @@ body.article .article-title{
 	margin-bottom: 20px;
 }
 .article-body .cms-youtube iframe{
-	width: 100%;
+	width: 100% !important;
 }
 .article-body .cms-tweet{
 	margin-bottom: 20px;
@@ -385,6 +386,10 @@ body.admin #mainContent{
 	.article-primary-asset iframe,
 	.article-body iframe{
 	    height: 176px;
+	}
+	.article-body .cms-image {
+	    width: 100%;
+	    margin: 0 0 20px 0;
 	}
 	.right-rail{
 		display: none;
