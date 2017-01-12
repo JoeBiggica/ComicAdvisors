@@ -132,7 +132,7 @@ if (Meteor.isClient) {
 		          {type: 'textbox', name: 'quote', label: 'Quote'}
 		        ],
 		        onsubmit: function(e) {
-		          editor.insertContent('<div class="cms-quote"><span class="quote">&#34;</span>'+e.data.quote+'<span class="quote">&#34;</span></div>');
+		          editor.insertContent('<div class="cms-quote"><span class="quote">&ldquo;</span>'+e.data.quote+'<span class="quote">&rdquo;</span></div>');
 		        }
 		      });
 		    }

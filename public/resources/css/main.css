@@ -307,8 +307,10 @@ body.article .article-title{
 }
 .article-body .cms-quote .quote{
 	font-size: 72px;
+	font-family: cursive;
     color: #EB2828;
     vertical-align: bottom;
+    margin: 0 10px;
 }
 
 /* Footer */
