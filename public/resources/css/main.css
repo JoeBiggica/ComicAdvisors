@@ -302,6 +302,8 @@ body.article .article-title{
     font-family: times new roman,helvetica,arial,sans-serif;
     font-size: 28px;
     line-height: 40px;
+    width: 75%;
+    margin: 0 auto 20px;
 }
 .article-body .cms-quote .quote{
 	font-size: 72px;
