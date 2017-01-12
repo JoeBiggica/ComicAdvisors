@@ -295,8 +295,11 @@ body.article .article-title{
 .article-body .cms-youtube iframe{
 	width: 100%;
 }
-.article-body .cms-tweet {
+.article-body .cms-tweet{
 	margin-bottom: 20px;
+}
+.article-body .cms-tweet .twitter-tweet{
+	margin: 0 auto;
 }
 .article-body .cms-quote{
     font-family: times new roman,helvetica,arial,sans-serif;
