@@ -50,7 +50,7 @@ p{
 	border: none;
 }
 nav .navbar-logo{
-	background: url(resources/images/CA_Logo.png) no-repeat center;
+	background: url(../images/CA_Logo.png) no-repeat center;
 	background-size: 250px;
 	width: 300px;
 	height: 40px;
@@ -78,7 +78,7 @@ nav .logo{
     height: 33px;
     margin-top: -3px;
     display: inline-block;
-    background: url(resources/images/Social_Icon-circle-black.png) no-repeat center;
+    background: url(../images/Social_Icon-circle-black.png) no-repeat center;
     background-size: 33px;
 }
 nav .navbar-nav{
@@ -115,7 +115,7 @@ nav .navbar-nav{
 .nav-social i{
 	height: 26px;
 	display: inline-block;
-	background: url(resources/images/core-share-white-color-no-circle-2x.png) no-repeat center;
+	background: url(../images/core-share-white-color-no-circle-2x.png) no-repeat center;
 	background-size: 184px;
 }
 .nav-social .ca-youtube{
@@ -379,7 +379,3 @@ body.admin #mainContent{
 		display: none;
 	}
 }
-
-
-
-
