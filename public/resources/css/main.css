@@ -154,6 +154,35 @@ nav .navbar-nav{
 .comicadvisors .navbar-fixed-bottom .navbar-collapse{
 	max-height: none;
 }
+.comicadvisors .navbar-default .navbar-toggle{
+	border: none;
+}
+.comicadvisors .navbar-default .navbar-toggle .icon-bar{
+	background-color: #fff;
+}
+.comicadvisors .navbar-default .navbar-toggle .icon-bar:first-child{
+	background-color: #EB2828;
+}
+.comicadvisors .navbar-default .navbar-toggle:hover, 
+.comicadvisors .navbar-default .navbar-toggle:focus{
+	background: none;
+}
+.comicadvisors .navbar-toggle.collapsed .icon-bar{
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    transition: transform .3s;
+}
+.comicadvisors .navbar-toggle .icon-bar{
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transition: transform .3s;
+    -moz-transition: transform .3s;
+    transition: transform .3s;
+}
 
 /* Main Content */
 #mainContent{
