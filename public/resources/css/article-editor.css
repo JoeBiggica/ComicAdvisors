@@ -1,11 +1,48 @@
 /* Article Editor Stylesheet */
 
-#caArticleEditor p img,
-#caArticleEditor figure.image {
-	width: 50%;
+#caArticleEditor p{
+	font-family: helvetica,arial,sans-serif;
+	font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
-#caArticleEditor figure img {
+#caArticleEditor .cms-image{
+	width: 50%;
+	float: left;
+	margin: 6px 20px 20px 0;
+}
+#caArticleEditor .cms-image img{
 	width: 100%;
-	margin: 0;
+}
+#caArticleEditor .cms-image .caption{
+	margin: 10px 0 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#caArticleEditor .cms-youtube{
+	margin-bottom: 20px;
+}
+#caArticleEditor .cms-youtube iframe{
+	width: 100%;
+}
+#caArticleEditor .cms-tweet{
+	margin-bottom: 20px;
+}
+#caArticleEditor .cms-tweet .twitter-tweet{
+	margin: 0 auto;
+}
+#caArticleEditor .cms-quote{
+    font-family: times new roman,helvetica,arial,sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    width: 75%;
+    margin: 0 auto 20px;
+}
+#caArticleEditor .cms-quote .quote{
+	font-size: 72px;
+	font-family: cursive;
+    color: #EB2828;
+    vertical-align: bottom;
+    margin: 0 10px;
 }
 

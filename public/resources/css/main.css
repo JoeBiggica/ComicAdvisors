@@ -384,7 +384,7 @@ body.admin #mainContent{
 	.article-primary-asset,
 	.article-primary-asset iframe,
 	.article-body iframe{
-	    height: 236px;
+	    height: 176px;
 	}
 	.right-rail{
 		display: none;
