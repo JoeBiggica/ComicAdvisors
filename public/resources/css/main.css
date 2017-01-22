@@ -262,6 +262,15 @@ body.admin #mainContent{
 .not-found-container{
 	text-align: center;
 }
+.not-found-container h1{
+	margin-bottom: 10px;
+}
+.not-found-container h3{
+	margin-bottom: 16px;
+}
+.not-found-container img{
+	width: 100%;
+}
 
 @media(max-width:1200px){
 	nav .navbar-nav {
