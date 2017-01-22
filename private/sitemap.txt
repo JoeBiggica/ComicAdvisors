@@ -1,2 +1,7 @@
-http://www.comicadvisors.com/article/comic-picks-superman-15/HGEsfnZXo2ur6Wczv
-
+http://www.comicadvisors.com/
+http://www.comicadvisors.com/comics
+http://www.comicadvisors.com/movies
+http://www.comicadvisors.com/tv
+http://www.comicadvisors.com/games
+http://www.comicadvisors.com/collectibles
+{{urlList}}
