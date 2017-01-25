@@ -1,16 +1,12 @@
 <template name="homepage">
-	<div class="container">
-		<div class="row">
-		  	<div class="col-lg-7">
-		  		<div class="module-title"><h3>Latest</h3></div>
-			  	{{#each articles}}
-			  		{{> articleItemFeature}}
-			  	{{/each}}
-		  	</div>
-		  	<div class="col-lg-3 right-rail">
-		  		<div class="module-title"><h3>Feed</h3></div>
-		    	{{> twitterFeed}}
-		  	</div>
-	  	</div>
+  	<div class="col-lg-8">
+  		<div class="module-title"><h3>Latest</h3></div>
+	  	{{#each articles}}
+	  		{{> articleItemFeature}}
+	  	{{/each}}
+  	</div>
+  	<div class="col-lg-4 right-rail">
+  		<div class="module-title"><h3>Feed</h3></div>
+    	{{> twitterFeed}}
   	</div>
 </template>
