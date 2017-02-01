@@ -108,11 +108,12 @@ body.article .article-title{
     margin: 0 auto 20px;
 }
 .article-body .cms-quote .quote{
-	font-size: 72px;
-	font-family: cursive;
+	font-size: 64px;
+    font-family: cursive;
     color: #EB2828;
     vertical-align: bottom;
-    margin: 0 10px;
+    margin: 0 6px;
+    line-height: 18px;
 }
 
 @media(max-width:1200px){
