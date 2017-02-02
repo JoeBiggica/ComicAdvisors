@@ -3,6 +3,15 @@ if (Meteor.isClient) {
 		$('body').addClass('comicadvisors');
 	});
 
+	Template.mainLayout.onRendered(function() {
+		$.getScript("//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", function() {
+		    return (adsbygoogle = window.adsbygoogle || []).push({
+		    	google_ad_client: "ca-pub-1999041498279353",
+      			enable_page_level_ads: true
+		    });
+		});
+	});
+
 	Template.register.events({
 		'submit form': function(event) {
 			event.preventDefault();
