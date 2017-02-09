@@ -220,7 +220,7 @@ article .article-title h3{
 }
 article .article-description{
 	font-size: 1.6em;
-	line-height: 18px;
+	line-height: 20px;
 	color: #666;
 	margin-bottom: 6px;
 }
@@ -330,10 +330,12 @@ body.admin #mainContent{
 	}
 	article .article-title h3{
 		font-size: 3em;
+		margin-bottom: 6px;
 	}
 	article .article-description{
 		font-size: 1.4em;
 		line-height: 16px;
+		margin-bottom: 10px;
 	}
 	article .article-author {
 	    font-size: 1.4em;
