@@ -219,8 +219,8 @@ article .article-title h3{
 	margin-bottom: 2px;
 }
 article .article-description{
-	font-size: 1.4em;
-	line-height: 16px;
+	font-size: 1.6em;
+	line-height: 18px;
 	color: #666;
 	margin-bottom: 6px;
 }
@@ -236,7 +236,7 @@ article .article-section a,
 	color: #EB2828;
 }
 article .article-author{
-	font-size: 1.2em;
+	font-size: 1.6em;
 }
 .article-author .author-name{
 	font-weight: bold;
@@ -330,6 +330,13 @@ body.admin #mainContent{
 	}
 	article .article-title h3{
 		font-size: 3em;
+	}
+	article .article-description{
+		font-size: 1.4em;
+		line-height: 16px;
+	}
+	article .article-author {
+	    font-size: 1.4em;
 	}
 	.right-rail{
 		display: none;
