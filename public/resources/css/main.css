@@ -215,7 +215,12 @@ article iframe{
 article .article-title h3{
 	color: #111;
 	font-weight: bold;
-	font-size: 3em;
+	font-size: 4em;
+	margin-bottom: 2px;
+}
+article .article-description{
+	font-size: 1.4em;
+	color: #666;
 	margin-bottom: 6px;
 }
 article .article-section,
@@ -321,6 +326,9 @@ body.admin #mainContent{
 	}
 	article .article-photo{
 	    height: 236px;
+	}
+	article .article-title h3{
+		font-size: 3em;
 	}
 	.right-rail{
 		display: none;
