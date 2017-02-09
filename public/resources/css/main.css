@@ -220,6 +220,7 @@ article .article-title h3{
 }
 article .article-description{
 	font-size: 1.4em;
+	line-height: 16px;
 	color: #666;
 	margin-bottom: 6px;
 }
