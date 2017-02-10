@@ -27,6 +27,9 @@ body.comicadvisors{
 .comicadvisors.admin a{
     color: #111;
 }
+.module{
+	margin-bottom: 30px;
+}
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p { margin: 0; }
@@ -245,7 +248,7 @@ article .article-author{
 /* Footer */
 .comicadvisors footer{
 	border-top: 3px solid #111;
-    margin: 40px 0;
+    margin: 0 0 40px;
     padding-top: 20px;
 }
 
@@ -276,6 +279,12 @@ body.admin #mainContent{
 }
 .not-found-container img{
 	width: 100%;
+}
+
+/* Ads */
+.leaderboard{
+	margin-bottom: 24px;
+	text-align: center;
 }
 
 @media(max-width:1200px){
