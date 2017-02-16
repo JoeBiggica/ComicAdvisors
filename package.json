@@ -6,6 +6,7 @@
     "deploy": "git push heroku master"
   },
   "dependencies": {
+    "babel-runtime": "^6.23.0",
     "meteor-node-stubs": "~0.2.0",
     "prerender-node": "^2.5.0"
   }
