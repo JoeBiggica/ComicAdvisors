@@ -94,6 +94,11 @@ body.article .article-title{
 	float: left;
 	margin: 6px 20px 16px 0;
 }
+.article-body .cms-image.full-width{
+	width: 100%;
+	float: none;
+	margin-right: 0;
+}
 .article-body .cms-image img{
 	width: 100%;
 }
