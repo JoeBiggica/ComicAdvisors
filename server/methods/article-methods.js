@@ -56,6 +56,7 @@ Meteor.methods({
       twitterURL: twitterURL,
       facebookURL: facebookURL
     });
+    console.log('ssr-render');
     return html;
   },
 
@@ -71,7 +72,6 @@ Meteor.methods({
         schemaKeywords = keywords.replace(/"/g, '\\"').replace(/\'/g, '\\u0027').replace(/,/g, '\",\"'),
         twitterURL     = 'http://www.twitter.com/intent/tweet?url=' + urlEncoded + '&via=comicadvisors&text=' + titleEncoded,
         facebookURL    = 'http://www.facebook.com/sharer/sharer.php?u=' + urlEncoded + '&t=' + titleEncoded;
-        console.log(url)
     var html = SSR.render('articlePageAMP', {
       doctype: '<!DOCTYPE html>',
       url: url,
@@ -90,6 +90,7 @@ Meteor.methods({
       twitterURL: twitterURL,
       facebookURL: facebookURL
     });
+    console.log('ssr-render');
     return html;
   }
 });
