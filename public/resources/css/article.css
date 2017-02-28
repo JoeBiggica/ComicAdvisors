@@ -68,12 +68,26 @@ body.article .article-title{
 .share-tools-list .share-facebook:hover{
 	background-position: -36px -36px;
 }
-.article-body p{
+.article-body p,
+.article-body ul,
+.article-body ol{
 	font-family: helvetica,arial,sans-serif;
 	font-size: 1.7em;
     line-height: 24px;
     margin-bottom: 20px;
     margin-left: 80px;
+}
+.article-body ul{
+	list-style: none;
+	padding: 0;
+}
+.article-body ul li{
+	padding-left: 30px;
+    text-indent: -11px;
+}
+.article-body ul li:before{
+	content: "• ";
+    color: #EB2828;
 }
 .article-body .cms-image{
 	width: 50%;
@@ -137,7 +151,9 @@ body.article .article-title{
 	.article-body iframe{
 	    height: 236px;
 	}
-	.article-body p{
+	.article-body p,
+	.article-body ul,
+	.article-body ol{
 	    margin-left: 0;
 	}
 	.article-body .cms-image {
