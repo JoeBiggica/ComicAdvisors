@@ -277,19 +277,22 @@ if (Meteor.isClient) {
 		tinymce.init({
 			selector: 'textarea.primary-asset',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
-			content_css : '/article-editor.css',
+			content_css : '/resources/css/article-editor.css',
+			body_id: 'editorPrimaryAsset',
 			plugins: 'caimage cayoutube',
 			menubar: '',
 			toolbar: 'caimage cayoutube',
 			image_dimensions: true,
 			image_description: false,
-			image_caption: true
+			image_caption: true,
+			height: 300
 		});
 		tinymce.init({
 			selector: 'textarea.body',
 			skin_url: '/packages/teamon_tinymce/skins/lightgray',
-			content_css : '/resources/css/article-editor.css',
-			body_id: 'caArticleEditor',
+			content_css : '/resources/css/main.css, /resources/css/article.css, /resources/css/article-editor.css',
+			body_id: 'editorBody',
+			body_class: 'article-body',
 			plugins: 'link caquote caimage cayoutube catweet',
 			menubar: 'file edit view format',
 			toolbar: 'undo redo | styleselect | bold italic | link caquote caimage cayoutube catweet | alignleft aligncenter alignright | bullist numlist',
