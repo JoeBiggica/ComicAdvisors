@@ -10,13 +10,13 @@ Meteor.methods({
       }
 
       _.extend(quote, additionalParams);
-      quote._id = quotes.insert(quote);
+      quote._id = Quotes.insert(quote);
 
       return quote;
   },
 
   updatequote: function(id) {
-    var quote = quotes.find(id);
+    var quote = Quotes.find(id);
     return quote;
   }
 });

@@ -1,0 +1,11 @@
+<template name="quoteList">
+  	<div class="col-lg-12">
+  		<div class="module-title"><h3>Quotes</h3></div>
+	  	{{#each quotes}}
+	  		<div>
+          {{{quote}}}   
+          {{{photo}}}
+        </div>
+	  	{{/each}}
+  	</div>
+</template>

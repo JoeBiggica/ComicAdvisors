@@ -304,6 +304,12 @@ if (Meteor.isClient) {
 			image_description: false,
 			image_caption: true
 		});
+		tinymce.init({
+			selector: 'textarea.quote-text',
+			skin_url: '/packages/teamon_tinymce/skins/lightgray',
+			menubar: false,
+			toolbar: 'undo redo | bold italic underline',
+		});
 	}
 
 	Template.newArticle.rendered = function() {
@@ -312,6 +318,11 @@ if (Meteor.isClient) {
 	}
 
 	Template.articleUpdate.rendered = function() {
+		tinymceInit();
+		$('form').attr('novalidate','');
+	}
+
+	Template.newQuote.rendered = function() {
 		tinymceInit();
 		$('form').attr('novalidate','');
 	}
