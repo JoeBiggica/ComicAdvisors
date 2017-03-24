@@ -1,0 +1,10 @@
+<template name="quotePick">
+	<div class="module-title"><h3>Quote of the Week</h3></div>
+	<div class="quote-pick module">
+		{{#each quotes}}
+	  		<div>
+          		<img src="{{photo}}" alt="Article Photo: {{quote}}">
+        	</div>
+	  	{{/each}}
+	</div>
+</template>
