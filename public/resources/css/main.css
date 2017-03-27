@@ -30,6 +30,10 @@ body.comicadvisors{
 .module{
 	margin-bottom: 30px;
 }
+.dark{
+	background: #2a2a2a;
+	color: #fff;
+}
 
 /* Typography */
 h1, h2, h3, h4, h5, h6, p { margin: 0; }
@@ -244,6 +248,15 @@ article .article-author{
 .article-author .author-name{
 	font-weight: bold;
 }
+
+/* Right Rail Modules */
+.quote-pick{
+	padding: 10px; 
+}
+.quote-pick img{
+	width: 100%;
+}
+
 
 /* Footer */
 .comicadvisors footer{
