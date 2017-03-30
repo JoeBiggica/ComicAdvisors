@@ -256,6 +256,21 @@ article .article-author{
 .quote-pick img{
 	width: 100%;
 }
+.quote-pick .quote-photo{
+	margin-bottom: 10px;
+}
+.quote-pick .quote-text{
+	margin-bottom: 8px
+}
+.quote-pick blockquote{
+	font-size: 12px;
+	font-family: helvetica,arial,sans-serif;
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+.quote-pick .quote-meta{
+	font-size: 12px;
+}
 
 
 /* Footer */

@@ -2,15 +2,15 @@
 	<div class="module-title"><h3>Quote of the Week</h3></div>
 	<div class="quote-pick module dark">
 		{{#each quotes}}
-			<div>
+			<div class="quote-photo">
           		<img src="{{photo}}" alt="Article Photo: {{quote}}">
         	</div>
-			<div>
-				{{{quote}}}
+			<div class="quote-text">
+				<blockquote>{{{quote}}}</blockquote>
 			</div>
 			<div class="quote-meta">
-				<div>{{writer}}</div>
-				<div>{{comicSource}}</div>
+				<div>By {{writer}}</div>
+				<div>From {{comicSource}}</div>
 			</div>
 	  	{{/each}}
 	</div>
