@@ -272,6 +272,9 @@ article .article-author{
 .quote-pick .quote-meta{
 	font-size: 12px;
 }
+.quote-pick .quote-character{
+	margin-bottom: 4px;
+}
 
 
 /* Footer */
@@ -283,6 +286,17 @@ article .article-author{
 
 footer h2{
 	margin-bottom: 10px;
+}
+
+/* Quotes Page */
+.quote-container{
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 117px;
+}
+.quote-container:nth-child(3n+1){
+	margin-right: 0;
 }
 
 /* Editor Tools */

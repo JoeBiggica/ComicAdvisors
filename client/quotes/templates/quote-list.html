@@ -1,11 +1,22 @@
 <template name="quoteList">
   	<div class="col-lg-12">
   		<div class="module-title"><h3>Quotes</h3></div>
-	  	{{#each quotes}}
-	  		<div>
-          {{{quote}}}
-          <img src="{{photo}}" alt=""/>
-        </div>
-	  	{{/each}}
-  	</div>
+  		
+			{{#each quotes}}
+			<div class="quote-container">
+	  			<div class="quote-pick module dark">
+					<div class="quote-photo">
+		          		<img src="{{photo}}" alt="Article Photo: {{quote}}">
+		        	</div>
+					<div class="quote-text">
+						<blockquote>{{{quote}}}</blockquote>
+					</div>
+					<div class="quote-meta">
+						<div class="quote-character"><b>{{character}}</b> in <u>{{comicSource}}</u></div>
+						<div class="quote-writer">By <b>{{writer}}</b></div>
+					</div>
+				</div>
+			</div>
+		  	{{/each}}
+	</div>
 </template>
