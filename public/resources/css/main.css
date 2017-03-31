@@ -290,12 +290,12 @@ footer h2{
 
 /* Quotes Page */
 .quote-container{
-	width: 300px;
+	width: 260px;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 117px;
+	margin-right: 30px;
 }
-.quote-container:nth-child(3n+1){
+.quote-container:nth-child(4n+1){
 	margin-right: 0;
 }
 
@@ -342,6 +342,15 @@ body.admin #mainContent{
 	nav .navbar-logo {
 	    background-size: 250px;
 	}
+	.quote-container{
+		margin-right: 77px;
+	}
+	.quote-container:nth-child(4n+1){
+		margin-right: 77px;
+	}
+	.quote-container:nth-child(3n+1){
+		margin-right: 0;
+	}
 }
 
 @media(max-width:992px){
@@ -349,6 +358,10 @@ body.admin #mainContent{
 	    position: relative;
 	    display: block;
 	    padding: 16px 4px 10px;
+	}
+	.quote-container{
+		width: 225px;
+		margin-right: 19px;
 	}
 }
 
@@ -365,6 +378,11 @@ body.admin #mainContent{
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+	}
+	.quote-container {
+	    width: 300px;
+	    display: block;
+	    margin: 0 auto;
 	}
 }
 
@@ -394,5 +412,10 @@ body.admin #mainContent{
 	}
 	.right-rail{
 		display: none;
+	}
+	.quote-container {
+	    width: 300px;
+	    display: block;
+	    margin: 0 auto;
 	}
 }
