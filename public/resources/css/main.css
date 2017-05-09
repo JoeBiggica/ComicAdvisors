@@ -287,7 +287,7 @@ article .article-author{
     padding: 14px 10px;
     text-transform: uppercase;
     border: 1px solid #2a2a2a;
-    transition: all .15s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 .pagination-controls .pagination-button:hover{
 	background: #fff;
@@ -300,7 +300,7 @@ article .article-author{
 /* Footer */
 .comicadvisors footer{
 	border-top: 3px solid #111;
-    margin: 0 0 40px;
+    margin: 40px 0;
     padding-top: 20px;
 }
 
