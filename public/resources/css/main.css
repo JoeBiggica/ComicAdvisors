@@ -276,6 +276,26 @@ article .article-author{
 	margin-bottom: 4px;
 }
 
+/* Pagination Controls */
+.pagination-controls{
+    
+}
+.pagination-controls .pagination-button{
+	width: 245px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    border: 1px solid #2a2a2a;
+    transition: all .15s ease-in-out;
+}
+.pagination-controls .pagination-button:hover{
+	background: #fff;
+	color: #F02836;
+}
+.pagination-button .pagination-arrow{
+	margin-left: 10px;
+}
 
 /* Footer */
 .comicadvisors footer{
