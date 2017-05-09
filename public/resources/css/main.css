@@ -277,9 +277,6 @@ article .article-author{
 }
 
 /* Pagination Controls */
-.pagination-controls{
-    
-}
 .pagination-controls .pagination-button{
 	width: 245px;
     font-size: 20px;
@@ -294,7 +291,7 @@ article .article-author{
 	color: #F02836;
 }
 .pagination-button .pagination-arrow{
-	margin-left: 10px;
+	float: right;
 }
 
 /* Footer */
@@ -437,5 +434,8 @@ body.admin #mainContent{
 	    width: 300px;
 	    display: block;
 	    margin: 0 auto;
+	}
+	.pagination-controls .pagination-button{
+		width: 100%;
 	}
 }
