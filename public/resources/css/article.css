@@ -30,16 +30,16 @@
 	color: #fff;
 }
 .article-primary-asset img,
-.article-primary-asset iframe{
+.article-primary-asset iframe,
+.article-body .cms-youtube iframe{
 	width: 100%;
-	height: 100%;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
-.article-primary-asset iframe{
-	/*height: 420px;
-	max-width: 100% !important;*/
+.article-primary-asset iframe,
+.article-body .cms-youtube iframe{
+	height: 100% !important;
 }
 .article-header-text{
     
@@ -143,13 +143,6 @@
     width: 100%;
     padding-top: 56.25%;
 	margin-bottom: 20px;
-}
-.article-body .cms-youtube iframe{
-	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-	width: 100% !important;
-    height: 100% !important;
 }
 .article-body .cms-tweet{
 	margin-bottom: 20px;
