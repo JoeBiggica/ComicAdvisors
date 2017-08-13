@@ -257,7 +257,7 @@ article .article-author{
 	width: 100%;
 }
 .quote-pick .quote-photo{
-	height: 250px;
+	max-height: 250px;
     overflow: hidden;
 	margin-bottom: 10px;
 }
