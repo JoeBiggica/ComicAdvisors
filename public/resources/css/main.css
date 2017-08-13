@@ -206,7 +206,9 @@ nav .navbar-nav{
     border-bottom: 1px solid #ccc;
 }
 article .article-photo{
-	height: 420px;
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%; 
 	overflow: hidden;
 	margin-bottom: 10px;
 	background: #1a1a1a;
@@ -215,9 +217,9 @@ article .article-photo{
 article img,
 article iframe{
 	width: 100%;
-}
-article iframe{
-	height: 368px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 article .article-title h3{
 	color: #111;
@@ -382,6 +384,9 @@ body.admin #mainContent{
 		width: 225px;
 		margin-right: 19px;
 	}
+	.right-rail{
+		display: none;
+	}
 }
 
 @media(max-width:768px){
@@ -392,11 +397,6 @@ body.admin #mainContent{
 	}
 	nav .navbar-nav {
 	    font-size: 1.4em;
-	}
-	article .article-photo img{
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 	}
 	.quote-container {
 	    width: 300px;
@@ -414,9 +414,6 @@ body.admin #mainContent{
 	nav .navbar-left{
 		border-bottom: 1px solid #ccc;
 	}
-	article .article-photo{
-	    height: 236px;
-	}
 	article .article-title h3{
 		font-size: 3em;
 		margin-bottom: 6px;
@@ -428,9 +425,6 @@ body.admin #mainContent{
 	}
 	article .article-author {
 	    font-size: 1.4em;
-	}
-	.right-rail{
-		display: none;
 	}
 	.quote-container {
 	    width: 300px;
