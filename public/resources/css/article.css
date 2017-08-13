@@ -32,6 +32,7 @@
 .article-primary-asset img,
 .article-primary-asset iframe{
 	width: 100%;
+	height: 100%;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -138,10 +139,17 @@
     border-bottom: 1px solid #ccc;
 }
 .article-body .cms-youtube{
+	position: relative;
+    width: 100%;
+    padding-top: 56.25%;
 	margin-bottom: 20px;
 }
 .article-body .cms-youtube iframe{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 	width: 100% !important;
+    height: 100% !important;
 }
 .article-body .cms-tweet{
 	margin-bottom: 20px;
