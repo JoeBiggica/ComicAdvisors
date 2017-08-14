@@ -1,4 +1,4 @@
-/* Comic Advisors Article Stylesheet Mar 2017 */
+/* Comic Advisors Article Stylesheet Aug 2017 */
 
 /* Article */
 .article-title h1{
@@ -101,8 +101,8 @@
 .article-body p,
 .article-body ul,
 .article-body ol{
-	font-family: helvetica,arial,sans-serif;
-	font-size: 1.7em;
+	font-family: raleway-regular,helvetica,arial,sans-serif;
+	font-size: 17px;
     line-height: 24px;
     margin-bottom: 20px;
     margin-left: 80px;
