@@ -413,10 +413,10 @@ body.admin #mainContent{
 	.nav > li > a {
 	    position: relative;
 	    display: block;
-	    padding: 15px 15px;
+	    padding: 15px 6px;
 	}
 	nav .navbar-nav {
-	    font-size: 1.4em;
+	    font-size: 12px;
 	}
 	.quote-container {
 	    width: 300px;
@@ -433,6 +433,12 @@ body.admin #mainContent{
 	}
 	nav .navbar-left{
 		border-bottom: 1px solid #ccc;
+	}
+	.nav > li > a {
+	    padding: 15px 15px;
+	}
+	nav .navbar-nav {
+	    font-size: 14px;
 	}
 	article .article-title h3{
 		font-size: 3em;
