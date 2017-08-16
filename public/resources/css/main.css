@@ -372,9 +372,6 @@ body.admin #mainContent{
 }
 
 @media(max-width:1200px){
-	nav .navbar-nav {
-	    font-size: 1.2em;
-	}
 	.nav > li > a {
 	    position: relative;
 	    display: block;
@@ -395,6 +392,9 @@ body.admin #mainContent{
 }
 
 @media(max-width:992px){
+	nav .navbar-nav {
+	    font-size: 12px;
+	}
 	.nav > li > a {
 	    position: relative;
 	    display: block;
